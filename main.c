@@ -10,6 +10,10 @@
 // gcc -DStack a.out 
 // NOTA: Pode não ser necessaŕio pois o Linker é muito prob Dinamico
 
+
+
+
+
 int inversions(short int grid[][4]);   // Calcular inversoes
 bool possivel(short int grid1[][4], short int grid2[][4]);  // Ver se é possivel ir de 1 a outra
 bool comparar(short int grid1[][4], short int grid2[][4]);  // Ver se sao iguais
