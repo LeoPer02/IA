@@ -27,34 +27,27 @@ Configuracao carregarConfiguracao(char filename[50])
     return config;
 }
 
+void printJogo(short int grid[16]) {
+    for (int i = 0; i < 4; i++)
+    {
+        for (int j = 0; j < 4; j++)
+        {
+            if (grid[i*4 + j] < 10) {
+                printf("%hu   ", grid[i*4 + j]);
+            } else {
+                printf("%hu  ", grid[i*4 + j]);
+            }
+        }
+        printf("\n");
+    }
+}
+
 void printConfiguracao(Configuracao config) {
     printf("Config inicial:\n"); 
-    for (int i = 0; i < 4; i++)
-    {
-        for (int j = 0; j < 4; j++)
-        {
-            if (config.inicial[i*4 + j] < 10) {
-                printf("%hu   ", config.inicial[i*4 + j]);
-            } else {
-                printf("%hu  ", config.inicial[i*4 + j]);
-            }
-        }
-        printf("\n");
-    }
+    printJogo(config.inicial);
 
     printf("\nConfig final:\n"); 
-    for (int i = 0; i < 4; i++)
-    {
-        for (int j = 0; j < 4; j++)
-        {
-            if (config.final[i*4 + j] < 10) {
-                printf("%hu   ", config.final[i*4 + j]);
-            } else {
-                printf("%hu  ", config.final[i*4 + j]);
-            }
-        }
-        printf("\n");
-    }
+    printJogo(config.final);
 
     printf("\n\n");
 }
