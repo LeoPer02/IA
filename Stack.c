@@ -1,3 +1,5 @@
+#include <stdbool.h>
+
 /*
 struct node* root = (struct node*)malloc(sizeof(struct node));
     copyArray(root->data, grid1);
