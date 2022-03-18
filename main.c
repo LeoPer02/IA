@@ -4,6 +4,7 @@
 #include "Stack.c"
 #include "Queue.c"
 #include "heur.c"
+#include "movimentos.c"
 
 // Eventualmente incluir flags para decidir qual Estrutura de Dados usar
 // Carregar no Pre-Processador, exemplo, se BPI usar Stack
@@ -69,6 +70,13 @@ int main(){
 
     printf("Sumatorio: %d\n", sum(grid1, grid2));
     printf("Manhattan: %d\n", manh(grid1, grid2));
+    move_down(grid1, 3, 3);
+    for(int i=0; i<4; i++){
+        for(int j=0; j<4; j++){
+            printf("%d ", grid1[i][j]);
+        }
+        printf("\n");
+    }
     #endif
     
 
