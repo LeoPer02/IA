@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "Board.h"
+#include "MovementStack.h"
 
 
 // Struct to hold the data and the pointer to the next boardElement.
@@ -22,6 +23,9 @@ void popBoard(struct boardElement** stack){
         //printf("Element popped: %c\n",(*stack) -> board);
         struct boardElement* tempPtr = *stack;
         *stack = (*stack) -> next;
+
+        deleteMovementStack(&(tempPtr->board->movementStack));
+        free(tempPtr->board);
         free(tempPtr);
     }
     else{

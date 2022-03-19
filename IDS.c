@@ -28,6 +28,7 @@ Board* ids(short int start[][4], short int goal[][4]) {
 Board* dls(Board* start, short int goal[][4]) {
     char movementOptions[4] = {'u', 'r', 'd', 'l'};
     bool found;
+    int nNodes = 0, maxNodes = 0;
 
     BoardElement *stack = (BoardElement*)malloc(sizeof(BoardElement));
     stack->board = start;
@@ -35,6 +36,7 @@ Board* dls(Board* start, short int goal[][4]) {
 
     while (stack != NULL) {
         if (stack->board->depth == 0 && comparar(stack->board->grid, goal)) { // Checagem do topo da stack
+            printf("Max nodes: %d\n", maxNodes);
             return stack->board; // Se encontrado o objetivo, retorna o resultado
         } else if (stack->board->depth != 0) { // Caso possa buscar mais a fundo, fazer isto
             found = false;
@@ -44,17 +46,27 @@ Board* dls(Board* start, short int goal[][4]) {
                     if (isMovimentoPossivel(movementOptions[i], stack->board->movementStack->move, stack->board->zeroLocation)) {
                         Board* newBoard = getNewBoardByMovement(stack->board, movementOptions[i]);
                         newBoard->depth = stack->board->depth - 1;
+
                         pushBoard(newBoard, &stack);
+                        nNodes++;
+                        if (nNodes > maxNodes) {
+                            maxNodes = nNodes;
+                        }
+
                         found = true;
                     }
                 }
             }
-            if (!found)
+            if (!found) {
                 popBoard(&stack);
+                nNodes--;
+            }
         } else {
             popBoard(&stack);
+            nNodes--;
         }
     }
 
+    printf("Max nodes: %d\n", maxNodes);
     return NULL;
 }

@@ -49,3 +49,12 @@ void printMovementStack(struct movementElement* stack) {
     printf("Movements: ");
     printMovementStackRec(stack);
 }
+
+void deleteMovementStack(struct movementElement** stack) {
+    struct movementElement* tmp;
+    while((*stack) != NULL) {
+        tmp = (*stack);
+        *stack = (*stack)->next;
+        free(tmp);
+    }
+}

@@ -19,4 +19,6 @@ void topMovement(struct movementElement* stack);
 
 void printMovementStack(struct movementElement* stack);
 
+void deleteMovementStack(struct movementElement** stack);
+
 #endif //IA_MOVEMENTSTACK_H

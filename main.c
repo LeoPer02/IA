@@ -70,7 +70,7 @@ void stopTimer(clock_t t) {
 }
 
 int main(){
-    char filename[50] = "/home/matheus/UP/IA/trabalhos/IA/input2.txt";
+    char filename[50] = "/home/matheus/UP/IA/trabalhos/IA/input3.txt";
     Configuracao config = carregarConfiguracao(filename);
     printConfiguracao(config);
 
