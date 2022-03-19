@@ -1,41 +1,92 @@
 #include <stdio.h>
-#include <stdbool.h>
-#include <stdlib.h>
-#include "Stack.c"
-#include "Queue.c"
-#include "heur.c"
-#include "movimentos.c"
+#include <time.h>
+#include "IDS.h"
 
 // Eventualmente incluir flags para decidir qual Estrutura de Dados usar
 // Carregar no Pre-Processador, exemplo, se BPI usar Stack
 // gcc -DStack a.out 
 // NOTA: Pode não ser necessaŕio pois o Linker é muito prob Dinamico
 
-
-
-
-
-int inversions(short int grid[][4]);   // Calcular inversoes
-bool possivel(short int grid1[][4], short int grid2[][4]);  // Ver se é possivel ir de 1 a outra
-bool comparar(short int grid1[][4], short int grid2[][4]);  // Ver se sao iguais
-
    // Busca com custo    -> Heap
    // Busca em largura   -> Hash
    // Outras             -> Linked List, Double Linked List, Queue, Stack...
 
-int main(){
-    short int grid1[4][4], grid2[4][4];                                      // short int para minimizar espaço em memória
-    for(int i = 0; i < 4; i++){
-        for(int j = 0; j < 4; j++){
-            scanf("%hd", &grid1[i][j]);
-        }                                                                // Ler inteiros para dentro do array grid
-    }
-    for(int i = 0; i < 4; i++){
-        for(int j = 0; j < 4; j++){
-            scanf("%hd", &grid2[i][j]);
-        }
-    } 
+// Configuracao inicial
+typedef struct configuracao
+{
+    short int inicial[16];
+    short int final[16];
+} Configuracao;
 
+Configuracao carregarConfiguracao(char filename[50])
+{
+    Configuracao config;
+
+    FILE *file;
+    file = fopen(filename, "r");
+    if (file)
+    {
+        for (int i = 0; i < 16; i++)
+            fscanf(file, "%hu", &config.inicial[i]);
+        for (int i = 0; i < 16; i++)
+            fscanf(file, "%hu", &config.final[i]);
+    }
+
+    return config;
+}
+
+void printBoard(short int grid[16]) {
+    for (int i = 0; i < 4; i++)
+    {
+        for (int j = 0; j < 4; j++)
+        {
+            if (grid[i*4 + j] < 10) {
+                printf("%hu   ", grid[i*4 + j]);
+            } else {
+                printf("%hu  ", grid[i*4 + j]);
+            }
+        }
+        printf("\n");
+    }
+}
+
+void printConfiguracao(Configuracao config) {
+    printf("Config inicial:\n");
+    printBoard(config.inicial);
+
+    printf("\nConfig final:\n");
+    printBoard(config.final);
+
+    printf("\n\n");
+}
+
+clock_t startTimer() {
+    return clock();
+}
+
+void stopTimer(clock_t t) {
+    t = clock() - t;
+    printf("Time elapsed: %.4f\n", ((double)t)/CLOCKS_PER_SEC);
+}
+
+int main(){
+    char filename[50] = "/home/matheus/UP/IA/trabalhos/IA/input2.txt";
+    Configuracao config = carregarConfiguracao(filename);
+    printConfiguracao(config);
+
+    if (possivel(config.inicial, config.final)) {
+        Board* resultBoard;
+        clock_t t;
+
+        t = startTimer();
+        resultBoard = ids(config.inicial, config.final);
+        stopTimer(t);
+
+        printf("Achou!\n");
+        printMovementStack(resultBoard->movementStack);
+    } else {
+        printf("Não é possível chegar ao objetivo final com estas configurações");
+    }
 
     #ifdef DEBBUG
     printf(" ---------------\nStack:\n ---------------\n");
@@ -81,60 +132,4 @@ int main(){
     
 
     return 0;
-}
-
-//Percorre a lista e verifica quantos elementos que estão depois de i são maiores que ele
-//Foi testada e funcionou corretamente
-int inversions(short int grid[][4]){
-    int count = 0;
-    for(int i = 0; i < 4; i++){
-        for(int j = 0; j < 4; j++){
-            for(int k = i; k < 4; k++){
-                if(i == k){
-                    for(int l = j; l < 4; l++){
-                        if(grid[i][j] > grid[k][l] && grid[i][j] != 0 && grid[k][l] != 0){count++;}
-                    }
-                }else{
-                    for(int l = 0; l < 4; l++){
-                        if(grid[i][j] > grid[k][l] && grid[i][j] != 0 && grid[k][l] != 0){count++;}
-                    }
-                }
-            }
-        }
-    }
-    return count;
-}
-
-// Verifica se é possivel chegar de um estado ao outro
-// Foi testada e funcionou em ambos os casos
-bool possivel(short int grid1[][4], short int grid2[][4]){
-    short int inv1 = inversions(grid1);
-    short int inv2 = inversions(grid2);
-    short int vazio1, vazio2;
-    for(int i = 0; i < 4; i++){
-        for(int j = 0; j < 4; j++){
-        if(grid1[i][j] == 0){
-            vazio1 = i;
-        }
-        if(grid2[i][j] == 0){
-            vazio2 = i;
-            }
-        }
-    }
-    if(((inv1 % 2 == 0) == (vazio1 % 2 == 0)) == ((inv2 % 2 == 0) == (vazio2 % 2 == 0))){
-        return true;
-    }else{
-        return false;
-    }
-}
-
-// Verifica se o estado atual é igual ao final, ou seja, se terminou
-// Foi testada e funcionou em ambos os casos
-bool comparar(short int grid1[][4], short int grid2[][4]){
-    for(int i = 0; i < 4; i++){
-        for(int j = 0; j < 4; j++){
-            if(grid1[i][j] != grid2[i][j]){return false;}
-        }
-    }
-    return true;
 }

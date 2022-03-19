@@ -1,5 +1,6 @@
+#include <stdbool.h>
 
-void move_rigth(short int grid1[][4],short int x, short int y){    
+void move_right(short int grid1[][4],short int x, short int y){
     y++;                                            //x posição do 0 na horizontal
     grid1[x][y-1]=grid1[x][y];                      //y posição do 0 na vertical
     grid1[x][y]=0;
@@ -24,12 +25,12 @@ void move_down(short int grid1[][4],short int x, short int y){
     grid1[x][y]=0;    
 }
 
-bool possivel(short int x, short int y, char move, char last){
+bool isMovimentoPossivel(char move, char last, short int zeroLocation[2]){
     if(move=='r'){
         if(last=='l'){
             return false;
         }
-        if(x==3){
+        if(zeroLocation[1] == 3){
             return false;
         }
         return true;
@@ -40,7 +41,7 @@ bool possivel(short int x, short int y, char move, char last){
         if(last=='r'){
             return false;
         }
-        if(x==0){
+        if(zeroLocation[1] == 0){
             return false;
         }
         return true;
@@ -51,7 +52,7 @@ bool possivel(short int x, short int y, char move, char last){
         if(last=='d'){
             return false;
         }
-        if(y==0){
+        if(zeroLocation[0] == 0){
             return false;
         }
         return true;
@@ -62,7 +63,7 @@ bool possivel(short int x, short int y, char move, char last){
         if(last=='u'){
             return false;
         }
-        if(y==3){
+        if(zeroLocation[0] == 3){
             return false;
         }
         return true;
