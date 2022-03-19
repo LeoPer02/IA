@@ -6,8 +6,8 @@
 #define IA_IDS_H
 
 #include <stdbool.h>
-#include "Board.h"
-#include "movimentos.h"
+#include "../DataStructures/Board.h"
+#include "../movimentos.h"
 
 
 Board* dls(Board* start, short int goal[][4]);

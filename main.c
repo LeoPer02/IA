@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <time.h>
-#include "IDS.h"
+#include "SearchAlgs/IDS.h"
 
 // Eventualmente incluir flags para decidir qual Estrutura de Dados usar
 // Carregar no Pre-Processador, exemplo, se BPI usar Stack
@@ -66,11 +66,11 @@ clock_t startTimer() {
 
 void stopTimer(clock_t t) {
     t = clock() - t;
-    printf("Time elapsed: %.4f\n", ((double)t)/CLOCKS_PER_SEC);
+    printf("Time elapsed: %.4f secs\n", ((double)t)/CLOCKS_PER_SEC);
 }
 
 int main(){
-    char filename[50] = "/home/matheus/UP/IA/trabalhos/IA/input3.txt";
+    char filename[50] = "/home/matheus/UP/IA/trabalhos/IA/input2.txt";
     Configuracao config = carregarConfiguracao(filename);
     printConfiguracao(config);
 
@@ -82,7 +82,7 @@ int main(){
         resultBoard = ids(config.inicial, config.final);
         stopTimer(t);
 
-        printf("Achou!\n");
+        printf("Solution found!\n");
         printMovementStack(resultBoard->movementStack);
     } else {
         printf("Não é possível chegar ao objetivo final com estas configurações");

@@ -4,11 +4,11 @@ project(IA C)
 set(CMAKE_C_STANDARD 11)
 
 add_executable(IA
-        Board.c
+        DataStructures/Board.c
         BPI.c
-        heur.c
-        IDS.c
+        SearchAlgs/heur.c
+        SearchAlgs/IDS.c
         main.c
         movimentos.c
-        BoardStack.c
-        MovementStack.c)
+        DataStructures/BoardStack.c
+        DataStructures/MovementStack.c)
