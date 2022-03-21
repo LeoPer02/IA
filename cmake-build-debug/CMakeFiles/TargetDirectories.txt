@@ -1,0 +1,3 @@
+/home/matheus/UP/IA/trabalhos/IA/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/matheus/UP/IA/trabalhos/IA/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/matheus/UP/IA/trabalhos/IA/cmake-build-debug/CMakeFiles/IA.dir
