@@ -1,33 +1,35 @@
-#ifndef IA_BOARD_H
-#define IA_BOARD_H
+#ifndef IA_IDSBOARD_H
+#define IA_IDSBOARD_H
 
 #include <stdbool.h>
 #include "MovementStack.h"
 
-typedef struct board {
+typedef struct idsBoard {
     short int grid[4][4];
     short int zeroLocation[2];
     MovementElement* movementStack;
     short int depth;
     bool sonsVisited[4];
-} Board;
+} IDSBoard;
 
 //Percorre a lista e verifica quantos elementos que estão depois de i são maiores que ele
 //Foi testada e funcionou corretamente
-int inversions(short int grid[][4]);
+int inversionsIDS(short int grid[][4]);
 
 // Verifica se é possivel chegar de um estado ao outro
 // Foi testada e funcionou em ambos os casos
-bool possivel(short int grid1[][4], short int grid2[][4]);
+bool possivelIDS(short int grid1[][4], short int grid2[][4]);
 
 // Verifica se o estado atual é igual ao final, ou seja, se terminou
 // Foi testada e funcionou em ambos os casos
-bool comparar(short int grid1[][4], short int grid2[][4]);
+bool compararIDS(short int grid1[][4], short int grid2[][4]);
 
-void setZeroLocation(short int grid[4][4]);
+void setZeroLocationIDS(short int grid[4][4]);
 
-Board* getNewBoard(short int grid[][4]);
+IDSBoard* getNewBoardIDS(short int grid[][4]);
 
-Board* getNewBoardByMovement(Board* fatherBoard, char movement);
+void doMovementIDS(IDSBoard* fatherBoard, char movement, short int newGrid[4][4]);
 
-#endif //IA_BOARD_H
+IDSBoard* generateBoardIDS(IDSBoard* fatherBoard, char movement, short int newGrid[4][4]) ;
+
+#endif //IA_IDSBOARD_H

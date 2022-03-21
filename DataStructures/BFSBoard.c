@@ -1,21 +1,19 @@
 #include <stdbool.h>
 #include <string.h>
 #include <malloc.h>
-#include "../movimentos.h"
+#include "../SearchAlgs/Movimentos.h"
 #include "MovementStack.h"
 
 
-typedef struct board {
+typedef struct BFSBoard {
     short int grid[4][4];
     short int zeroLocation[2];
     MovementElement* movementStack;
-    short int depth;
-    bool sonsVisited[4];
-} Board;
+} BFSBoard;
 
 //Percorre a lista e verifica quantos elementos que estão depois de i são maiores que ele
 //Foi testada e funcionou corretamente
-int inversions(short int grid[][4]){
+int inversionsBFS(short int grid[][4]){
     int count = 0;
     for(int i = 0; i < 4; i++){
         for(int j = 0; j < 4; j++){
@@ -37,17 +35,17 @@ int inversions(short int grid[][4]){
 
 // Verifica se é possivel chegar de um estado ao outro
 // Foi testada e funcionou em ambos os casos
-bool possivel(short int grid1[][4], short int grid2[][4]){
-    short int inv1 = inversions(grid1);
-    short int inv2 = inversions(grid2);
+bool possivelBFS(short int grid1[][4], short int grid2[][4]){
+    short int inv1 = inversionsBFS(grid1);
+    short int inv2 = inversionsBFS(grid2);
     short int vazio1, vazio2;
     for(int i = 0; i < 4; i++){
         for(int j = 0; j < 4; j++){
-        if(grid1[i][j] == 0){
-            vazio1 = i;
-        }
-        if(grid2[i][j] == 0){
-            vazio2 = i;
+            if(grid1[i][j] == 0){
+                vazio1 = i;
+            }
+            if(grid2[i][j] == 0){
+                vazio2 = i;
             }
         }
     }
@@ -60,7 +58,7 @@ bool possivel(short int grid1[][4], short int grid2[][4]){
 
 // Verifica se o estado atual é igual ao final, ou seja, se terminou
 // Foi testada e funcionou em ambos os casos
-bool comparar(short int grid1[][4], short int grid2[][4]){
+bool compararBFS(short int grid1[][4], short int grid2[][4]){
     for(int i = 0; i < 4; i++){
         for(int j = 0; j < 4; j++){
             if(grid1[i][j] != grid2[i][j]){return false;}
@@ -69,7 +67,7 @@ bool comparar(short int grid1[][4], short int grid2[][4]){
     return true;
 }
 
-void setZeroLocation(short int grid[4][4], short int zeroLocation[2]) {
+void setZeroLocationBFS(short int grid[4][4], short int zeroLocation[2]) {
     for (int i = 0; i < 4; i++) {
         for (int j = 0; j < 4; j++) {
             if (grid[i][j] == 0) {
@@ -81,15 +79,15 @@ void setZeroLocation(short int grid[4][4], short int zeroLocation[2]) {
     }
 }
 
-void copyMovementStack(MovementElement** element, MovementElement** destination) {
+void copyMovementStackBFS(MovementElement** element, MovementElement** destination) {
     if ((*element) != NULL) {
-        copyMovementStack(&(*element)->next, destination);
+        copyMovementStackBFS(&(*element)->next, destination);
         pushMovement((*element)->move, destination);
     }
 }
 
-Board* getNewBoard(short int grid[][4]) {
-    Board* newBoard = (Board*)malloc(sizeof(Board));
+BFSBoard* getNewBoardBFS(short int grid[][4]) {
+    BFSBoard* newBoard = (BFSBoard*)malloc(sizeof(BFSBoard));
 
     for (int i = 0; i < 4; i++) {
         for (int j = 0; j < 4; j++) {
@@ -97,47 +95,44 @@ Board* getNewBoard(short int grid[][4]) {
         }
     }
 
-    setZeroLocation(grid, newBoard->zeroLocation);
+    setZeroLocationBFS(grid, newBoard->zeroLocation);
     newBoard->movementStack = (MovementElement*)malloc(sizeof(MovementElement));
     newBoard->movementStack->move = 'x';
-    for (int i = 0; i < 4; i++)
-        newBoard->sonsVisited[i] = false;
-    
+
     return newBoard;
 }
 
-Board* getNewBoardByMovement(Board* fatherBoard, char movement) {
-    Board* newBoard = (Board*)malloc(sizeof(Board));
-
-    memcpy(newBoard->grid, fatherBoard->grid, sizeof(fatherBoard->grid));
+void doMovementBFS(BFSBoard* fatherBoard, char movement, short int newGrid[4][4]) {
+    memcpy(newGrid, fatherBoard->grid, sizeof(fatherBoard->grid));
     switch (movement) {
         case 'u':
-            move_up(newBoard->grid, fatherBoard->zeroLocation[0], fatherBoard->zeroLocation[1]);
+            move_up(newGrid, fatherBoard->zeroLocation[0], fatherBoard->zeroLocation[1]);
             break;
         case 'r':
-            move_right(newBoard->grid, fatherBoard->zeroLocation[0], fatherBoard->zeroLocation[1]);
+            move_right(newGrid, fatherBoard->zeroLocation[0], fatherBoard->zeroLocation[1]);
             break;
         case 'd':
-            move_down(newBoard->grid, fatherBoard->zeroLocation[0], fatherBoard->zeroLocation[1]);
+            move_down(newGrid, fatherBoard->zeroLocation[0], fatherBoard->zeroLocation[1]);
             break;
         case 'l':
-            move_left(newBoard->grid, fatherBoard->zeroLocation[0], fatherBoard->zeroLocation[1]);
+            move_left(newGrid, fatherBoard->zeroLocation[0], fatherBoard->zeroLocation[1]);
             break;
         default:
             printf("Movimento inválido");
-            return NULL;
+            break;
     }
+}
 
-    newBoard->depth = fatherBoard->depth;
+BFSBoard* generateBoardBFS(BFSBoard* fatherBoard, char movement, short int newGrid[4][4]) {
+    BFSBoard* newBoard = (BFSBoard*)malloc(sizeof(BFSBoard));
 
-    copyMovementStack(&fatherBoard->movementStack, &newBoard->movementStack);
+    memcpy(newBoard->grid, newGrid, sizeof(newBoard->grid));
+
+    copyMovementStackBFS(&fatherBoard->movementStack, &newBoard->movementStack);
     pushMovement(movement, &newBoard->movementStack);
 
-    setZeroLocation(newBoard->grid, newBoard->zeroLocation);
+    setZeroLocationBFS(newBoard->grid, newBoard->zeroLocation);
 
-    for (int i = 0; i < 4; i++)
-        newBoard->sonsVisited[i] = false;
-
-    return newBoard; 
+    return newBoard;
 }
 

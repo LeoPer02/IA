@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <time.h>
 #include "SearchAlgs/IDS.h"
+#include "SearchAlgs/BFS.h"
 
 // Eventualmente incluir flags para decidir qual Estrutura de Dados usar
 // Carregar no Pre-Processador, exemplo, se BPI usar Stack
@@ -57,7 +58,7 @@ void printConfiguracao(Configuracao config) {
     printf("\nConfig final:\n");
     printBoard(config.final);
 
-    printf("\n\n");
+    printf("\n");
 }
 
 clock_t startTimer() {
@@ -70,22 +71,26 @@ void stopTimer(clock_t t) {
 }
 
 int main(){
-    char filename[50] = "/home/matheus/UP/IA/trabalhos/IA/input2.txt";
+    char filename[150] = "/home/matheus/UP/IA/trabalhos/IA/Inputs/input3.txt";
     Configuracao config = carregarConfiguracao(filename);
     printConfiguracao(config);
 
-    if (possivel(config.inicial, config.final)) {
-        Board* resultBoard;
+    if (possivelIDS(config.inicial, config.final)) {
+        IDSBoard* resultBoard;
         clock_t t;
 
         t = startTimer();
         resultBoard = ids(config.inicial, config.final);
         stopTimer(t);
 
-        printf("Solution found!\n");
-        printMovementStack(resultBoard->movementStack);
+        if (resultBoard != NULL) {
+            printf("Solution found!\n");
+            printMovementStack(resultBoard->movementStack);
+        } else {
+            printf("Solution not found.\n");
+        }
     } else {
-        printf("Não é possível chegar ao objetivo final com estas configurações");
+        printf("It's not possible to reach the final configuration from the initial one");
     }
 
     #ifdef DEBBUG

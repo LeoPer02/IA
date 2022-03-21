@@ -2,20 +2,20 @@
 #ifndef IA_BOARDSTACK_H
 #define IA_BOARDSTACK_H
 
-#include "Board.h"
+#include "IDSBoard.h"
 
-// Struct to hold the data and the pointer to the next boardElement.
-typedef struct boardElement{
-    Board* board;
-    struct boardElement* next;
-} BoardElement;
+// Struct to hold the data and the pointer to the next boardStackElement.
+typedef struct boardStackElement{
+    IDSBoard* board;
+    struct boardStackElement* next;
+} BoardStackElement;
 
-void pushBoard(Board* board, struct boardElement** stack);
-// Remove boardElement from the topMovement of the stack
-void popBoard(struct boardElement** stack);
-// Display the boardElement at the topMovement of the stack
-void topBoard(struct boardElement* stack);
+void pushBoardToStack(IDSBoard* board, struct boardStackElement** stack);
+// Remove boardStackElement from the topMovement of the stack
+void popBoardFromStack(struct boardStackElement** stack);
+// Display the boardStackElement at the topMovement of the stack
+void topBoardFromStack(struct boardStackElement* stack);
 
-void printBoardStackSize(struct boardElement* stack);
+void printBoardStackSize(struct boardStackElement* stack);
 
 #endif //IA_BOARDSTACK_H

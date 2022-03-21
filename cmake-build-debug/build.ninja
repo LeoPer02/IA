@@ -72,20 +72,14 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 
 build cmake_object_order_depends_target_IA: phony || CMakeFiles/IA.dir
 
-build CMakeFiles/IA.dir/DataStructures/Board.c.o: C_COMPILER__IA_Debug /home/matheus/UP/IA/trabalhos/IA/DataStructures/Board.c || cmake_object_order_depends_target_IA
-  DEP_FILE = CMakeFiles/IA.dir/DataStructures/Board.c.o.d
+build CMakeFiles/IA.dir/DataStructures/IDSBoard.c.o: C_COMPILER__IA_Debug /home/matheus/UP/IA/trabalhos/IA/DataStructures/IDSBoard.c || cmake_object_order_depends_target_IA
+  DEP_FILE = CMakeFiles/IA.dir/DataStructures/IDSBoard.c.o.d
   FLAGS = -g -std=gnu11
   OBJECT_DIR = CMakeFiles/IA.dir
   OBJECT_FILE_DIR = CMakeFiles/IA.dir/DataStructures
 
-build CMakeFiles/IA.dir/BPI.c.o: C_COMPILER__IA_Debug /home/matheus/UP/IA/trabalhos/IA/BPI.c || cmake_object_order_depends_target_IA
-  DEP_FILE = CMakeFiles/IA.dir/BPI.c.o.d
-  FLAGS = -g -std=gnu11
-  OBJECT_DIR = CMakeFiles/IA.dir
-  OBJECT_FILE_DIR = CMakeFiles/IA.dir
-
-build CMakeFiles/IA.dir/SearchAlgs/heur.c.o: C_COMPILER__IA_Debug /home/matheus/UP/IA/trabalhos/IA/SearchAlgs/heur.c || cmake_object_order_depends_target_IA
-  DEP_FILE = CMakeFiles/IA.dir/SearchAlgs/heur.c.o.d
+build CMakeFiles/IA.dir/SearchAlgs/Heur.c.o: C_COMPILER__IA_Debug /home/matheus/UP/IA/trabalhos/IA/SearchAlgs/Heur.c || cmake_object_order_depends_target_IA
+  DEP_FILE = CMakeFiles/IA.dir/SearchAlgs/Heur.c.o.d
   FLAGS = -g -std=gnu11
   OBJECT_DIR = CMakeFiles/IA.dir
   OBJECT_FILE_DIR = CMakeFiles/IA.dir/SearchAlgs
@@ -102,11 +96,11 @@ build CMakeFiles/IA.dir/main.c.o: C_COMPILER__IA_Debug /home/matheus/UP/IA/traba
   OBJECT_DIR = CMakeFiles/IA.dir
   OBJECT_FILE_DIR = CMakeFiles/IA.dir
 
-build CMakeFiles/IA.dir/movimentos.c.o: C_COMPILER__IA_Debug /home/matheus/UP/IA/trabalhos/IA/movimentos.c || cmake_object_order_depends_target_IA
-  DEP_FILE = CMakeFiles/IA.dir/movimentos.c.o.d
+build CMakeFiles/IA.dir/SearchAlgs/Movimentos.c.o: C_COMPILER__IA_Debug /home/matheus/UP/IA/trabalhos/IA/SearchAlgs/Movimentos.c || cmake_object_order_depends_target_IA
+  DEP_FILE = CMakeFiles/IA.dir/SearchAlgs/Movimentos.c.o.d
   FLAGS = -g -std=gnu11
   OBJECT_DIR = CMakeFiles/IA.dir
-  OBJECT_FILE_DIR = CMakeFiles/IA.dir
+  OBJECT_FILE_DIR = CMakeFiles/IA.dir/SearchAlgs
 
 build CMakeFiles/IA.dir/DataStructures/BoardStack.c.o: C_COMPILER__IA_Debug /home/matheus/UP/IA/trabalhos/IA/DataStructures/BoardStack.c || cmake_object_order_depends_target_IA
   DEP_FILE = CMakeFiles/IA.dir/DataStructures/BoardStack.c.o.d
@@ -120,6 +114,30 @@ build CMakeFiles/IA.dir/DataStructures/MovementStack.c.o: C_COMPILER__IA_Debug /
   OBJECT_DIR = CMakeFiles/IA.dir
   OBJECT_FILE_DIR = CMakeFiles/IA.dir/DataStructures
 
+build CMakeFiles/IA.dir/DataStructures/HashStack.c.o: C_COMPILER__IA_Debug /home/matheus/UP/IA/trabalhos/IA/DataStructures/HashStack.c || cmake_object_order_depends_target_IA
+  DEP_FILE = CMakeFiles/IA.dir/DataStructures/HashStack.c.o.d
+  FLAGS = -g -std=gnu11
+  OBJECT_DIR = CMakeFiles/IA.dir
+  OBJECT_FILE_DIR = CMakeFiles/IA.dir/DataStructures
+
+build CMakeFiles/IA.dir/SearchAlgs/BFS.c.o: C_COMPILER__IA_Debug /home/matheus/UP/IA/trabalhos/IA/SearchAlgs/BFS.c || cmake_object_order_depends_target_IA
+  DEP_FILE = CMakeFiles/IA.dir/SearchAlgs/BFS.c.o.d
+  FLAGS = -g -std=gnu11
+  OBJECT_DIR = CMakeFiles/IA.dir
+  OBJECT_FILE_DIR = CMakeFiles/IA.dir/SearchAlgs
+
+build CMakeFiles/IA.dir/DataStructures/BoardList.c.o: C_COMPILER__IA_Debug /home/matheus/UP/IA/trabalhos/IA/DataStructures/BoardList.c || cmake_object_order_depends_target_IA
+  DEP_FILE = CMakeFiles/IA.dir/DataStructures/BoardList.c.o.d
+  FLAGS = -g -std=gnu11
+  OBJECT_DIR = CMakeFiles/IA.dir
+  OBJECT_FILE_DIR = CMakeFiles/IA.dir/DataStructures
+
+build CMakeFiles/IA.dir/DataStructures/BFSBoard.c.o: C_COMPILER__IA_Debug /home/matheus/UP/IA/trabalhos/IA/DataStructures/BFSBoard.c || cmake_object_order_depends_target_IA
+  DEP_FILE = CMakeFiles/IA.dir/DataStructures/BFSBoard.c.o.d
+  FLAGS = -g -std=gnu11
+  OBJECT_DIR = CMakeFiles/IA.dir
+  OBJECT_FILE_DIR = CMakeFiles/IA.dir/DataStructures
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target IA
@@ -128,7 +146,7 @@ build CMakeFiles/IA.dir/DataStructures/MovementStack.c.o: C_COMPILER__IA_Debug /
 #############################################
 # Link the executable IA
 
-build IA: C_EXECUTABLE_LINKER__IA_Debug CMakeFiles/IA.dir/DataStructures/Board.c.o CMakeFiles/IA.dir/BPI.c.o CMakeFiles/IA.dir/SearchAlgs/heur.c.o CMakeFiles/IA.dir/SearchAlgs/IDS.c.o CMakeFiles/IA.dir/main.c.o CMakeFiles/IA.dir/movimentos.c.o CMakeFiles/IA.dir/DataStructures/BoardStack.c.o CMakeFiles/IA.dir/DataStructures/MovementStack.c.o
+build IA: C_EXECUTABLE_LINKER__IA_Debug CMakeFiles/IA.dir/DataStructures/IDSBoard.c.o CMakeFiles/IA.dir/SearchAlgs/Heur.c.o CMakeFiles/IA.dir/SearchAlgs/IDS.c.o CMakeFiles/IA.dir/main.c.o CMakeFiles/IA.dir/SearchAlgs/Movimentos.c.o CMakeFiles/IA.dir/DataStructures/BoardStack.c.o CMakeFiles/IA.dir/DataStructures/MovementStack.c.o CMakeFiles/IA.dir/DataStructures/HashStack.c.o CMakeFiles/IA.dir/SearchAlgs/BFS.c.o CMakeFiles/IA.dir/DataStructures/BoardList.c.o CMakeFiles/IA.dir/DataStructures/BFSBoard.c.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/IA.dir
   POST_BUILD = :

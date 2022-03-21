@@ -10,11 +10,11 @@ typedef struct movementElement{
     struct movementElement* next;
 } MovementElement;
 
-// Append the new boardElement to the start of the stack
+// Append the new boardStackElement to the start of the stack
 void pushMovement(char move, struct movementElement** stack);
-// Remove boardElement from the topMovement of the stack
+// Remove boardStackElement from the topMovement of the stack
 void popMovement(struct movementElement** stack);
-// Display the boardElement at the topMovement of the stack
+// Display the boardStackElement at the topMovement of the stack
 void topMovement(struct movementElement* stack);
 
 void printMovementStack(struct movementElement* stack);

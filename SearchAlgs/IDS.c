@@ -2,18 +2,20 @@
 #include <stddef.h>
 #include <malloc.h>
 #include "../DataStructures/BoardStack.h"
-#include "../DataStructures/Board.h"
-#include "../movimentos.h"
+#include "../DataStructures/IDSBoard.h"
+#include "../DataStructures/HashStack.h"
+#include "Movimentos.h"
 
+IDSBoard* dls(IDSBoard* start, short int goal[][4]);
 
-Board* dls(Board* start, short int goal[][4]);
+IDSBoard* dls_with_repetition_checking(IDSBoard* start, short int goal[][4]);
 
-Board* ids(short int start[][4], short int goal[][4]) {
-    Board* startBoard, *foundBoard;
+IDSBoard* ids(short int start[][4], short int goal[][4]) {
+    IDSBoard* startBoard, *foundBoard;
 
     int depth = 0;
     while(true) {
-        startBoard = getNewBoard(start);
+        startBoard = getNewBoardIDS(start);
         startBoard->depth = depth;
 
         foundBoard = dls(startBoard, goal);
@@ -25,16 +27,21 @@ Board* ids(short int start[][4], short int goal[][4]) {
     }
 }
 
-Board* dls(Board* start, short int goal[][4]) {
-    char movementOptions[4] = {'u', 'r', 'd', 'l'};
-    bool found;
 
-    BoardElement *stack = (BoardElement*)malloc(sizeof(BoardElement));
+IDSBoard* dls(IDSBoard* start, short int goal[][4]) {
+    const char movementOptions[4] = {'u', 'r', 'd', 'l'};
+
+    bool found;
+    short int newGrid[4][4];
+
+    BoardStackElement *stack = (BoardStackElement*)malloc(sizeof(BoardStackElement));
     stack->board = start;
     stack->next = NULL;
 
+    IDSBoard* newBoard;
+
     while (stack != NULL) {
-        if (stack->board->depth == 0 && comparar(stack->board->grid, goal)) { // Checagem do topo da stack
+        if (stack->board->depth == 0 && compararIDS(stack->board->grid, goal)) { // Checagem do topo da stack
             return stack->board; // Se encontrado o objetivo, retorna o resultado
         } else if (stack->board->depth != 0) { // Caso possa buscar mais a fundo, fazer isto
             found = false;
@@ -42,22 +49,71 @@ Board* dls(Board* start, short int goal[][4]) {
                 if (!stack->board->sonsVisited[i]) {
                     stack->board->sonsVisited[i] = true;
                     if (isMovimentoPossivel(movementOptions[i], stack->board->movementStack->move, stack->board->zeroLocation)) {
-                        Board* newBoard = getNewBoardByMovement(stack->board, movementOptions[i]);
-                        newBoard->depth = stack->board->depth - 1;
+                        doMovementIDS(stack->board, movementOptions[i], newGrid);
+                        newBoard = generateBoardIDS(stack->board, movementOptions[i], newGrid);
 
-                        pushBoard(newBoard, &stack);
+                        pushBoardToStack(newBoard, &stack);
 
                         found = true;
                     }
                 }
             }
             if (!found) {
-                popBoard(&stack);
+                popBoardFromStack(&stack);
             }
         } else {
-            popBoard(&stack);
+            popBoardFromStack(&stack);
         }
     }
 
     return NULL;
 }
+
+IDSBoard* dls_with_repetition_checking(IDSBoard* start, short int goal[][4]) {
+    const char movementOptions[4] = {'u', 'r', 'd', 'l'};
+
+    bool found;
+    unsigned long newBoardHash;
+    short int newGrid[4][4];
+
+    BoardStackElement *stack = (BoardStackElement*)malloc(sizeof(BoardStackElement));
+    stack->board = start;
+    stack->next = NULL;
+
+    HashElement *visitedStack = (HashElement*)malloc(sizeof(HashElement));
+    IDSBoard* newBoard;
+
+    while (stack != NULL) {
+        if (stack->board->depth == 0 && compararIDS(stack->board->grid, goal)) { // Checagem do topo da stack
+            return stack->board; // Se encontrado o objetivo, retorna o resultado
+        } else if (stack->board->depth != 0) { // Caso possa buscar mais a fundo, fazer isto
+            found = false;
+            for (int i = 0; i < 4 && !found; i++) {
+                if (!stack->board->sonsVisited[i]) {
+                    stack->board->sonsVisited[i] = true;
+                    if (isMovimentoPossivel(movementOptions[i], stack->board->movementStack->move, stack->board->zeroLocation)) {
+                        doMovementIDS(stack->board, movementOptions[i], newGrid);
+                        newBoardHash = gridToHash(newGrid);
+                        if (!isHashInStack(&visitedStack, newBoardHash)) {
+                            newBoard = generateBoardIDS(stack->board, movementOptions[i], newGrid);
+
+                            pushHash(newBoardHash, &visitedStack);
+                            pushBoardToStack(newBoard, &stack);
+
+                            found = true;
+                        }
+                    }
+                }
+            }
+            if (!found) {
+                popBoardFromStack(&stack);
+            }
+        } else {
+            popBoardFromStack(&stack);
+        }
+    }
+
+    deleteHashStack(&visitedStack);
+    return NULL;
+}
+

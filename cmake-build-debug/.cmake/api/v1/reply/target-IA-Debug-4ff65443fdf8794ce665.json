@@ -59,7 +59,10 @@
 				4,
 				5,
 				6,
-				7
+				7,
+				9,
+				10,
+				12
 			]
 		}
 	],
@@ -99,7 +102,20 @@
 				4,
 				5,
 				6,
-				7
+				7,
+				9,
+				10,
+				12
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				8,
+				11,
+				13,
+				14
 			]
 		}
 	],
@@ -108,19 +124,13 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "DataStructures/Board.c",
+			"path" : "DataStructures/IDSBoard.c",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "BPI.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "SearchAlgs/heur.c",
+			"path" : "SearchAlgs/Heur.c",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -138,7 +148,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "movimentos.c",
+			"path" : "SearchAlgs/Movimentos.c",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -152,6 +162,50 @@
 			"compileGroupIndex" : 0,
 			"path" : "DataStructures/MovementStack.c",
 			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "DataStructures/HashStack.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "DataStructures/HashStack.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "SearchAlgs/BFS.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "DataStructures/BoardList.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "DataStructures/BoardList.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "DataStructures/BFSBoard.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "DataStructures/BFSBoard.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "SearchAlgs/BFS.h",
+			"sourceGroupIndex" : 1
 		}
 	],
 	"type" : "EXECUTABLE"
