@@ -1,0 +1,13 @@
+# ninja log v5
+138	164	1647894533631869137	IA	afeb0799869f2ad6
+2	83	1647894533543870744	CMakeFiles/IA.dir/DataStructures/MovementStack.c.o	6cc8345a182a9fdd
+3	84	1647894533543870744	CMakeFiles/IA.dir/SearchAlgs/IDS.c.o	77019130ad13f060
+1	107	1647894533571870233	CMakeFiles/IA.dir/DataStructures/BoardList.c.o	7e9fca66fc6d993d
+1	98	1647894533563870379	CMakeFiles/IA.dir/DataStructures/HashStack.c.o	2ca6009cefd484c5
+3	74	1647894533539870818	CMakeFiles/IA.dir/SearchAlgs/Heur.c.o	922d7b47dbee8202
+1	111	1647894533575870160	CMakeFiles/IA.dir/DataStructures/IDSBoard.c.o	b8e9f653617a3977
+4	105	1647894533571870233	CMakeFiles/IA.dir/SearchAlgs/Movimentos.c.o	bc4d581cf7359f7b
+2	85	1647894533547870671	CMakeFiles/IA.dir/SearchAlgs/BFS.c.o	b38cf48001bb7420
+0	93	1647894533559870452	CMakeFiles/IA.dir/DataStructures/BFSBoard.c.o	746d2f87dee36e4e
+1	85	1647894533547870671	CMakeFiles/IA.dir/DataStructures/BoardStack.c.o	11bfd056255cfc66
+76	138	1647894533603869648	CMakeFiles/IA.dir/main.c.o	7401264ddb299a6

@@ -1,11 +1,15 @@
 #include <stdio.h>
 #include <stdbool.h>
 #include <stdlib.h>
-#include "Aux.c"
+#include "Movimentos.h"
+#include "../Utils/BoardUtils.h"
+#include "../DataStructures/Stack.h"
+#include "../DataStructures/Queue.h"
+#include "../DataStructures/Heap.h"
 
 void BL(short int inicial[][4], short int final[][4]){
     short int zero[2];
-    findZero(inicial, zero);
+    setZeroLocation(inicial, zero);
     struct Hnode* open; 
     push(inicial, 0,'x',&open, NULL, zero[0], zero[1]);
     struct Hnode* used = newNode(inicial, 0,'x', zero[0], zero[1], NULL, 0); 
@@ -33,7 +37,7 @@ void BL(short int inicial[][4], short int final[][4]){
             printf("\n");
         }
         printf("------------------\n");
-        if(possivelMov(temp->x,temp->y,'d',temp->mov)){
+        if(isMovimentoPossivel(temp->x,temp->y,'d',temp->mov)){
             short int copy[4][4];
             copyArray(copy, temp->data);
             move_down(copy, temp->x, temp->y);
@@ -42,16 +46,16 @@ void BL(short int inicial[][4], short int final[][4]){
                 pushQ(&used, copy, 0, 'd', temp->x+1, temp->y, temp, temp->depth+1);
             }
         } 
-        if(possivelMov(temp->x,temp->y,'r',temp->mov)){
+        if(isMovimentoPossivel(temp->x,temp->y,'r',temp->mov)){
             short int copy[4][4];
             copyArray(copy, temp->data);
-            move_rigth(copy, temp->x, temp->y);
+            move_right(copy, temp->x, temp->y);
             if(!contemQ(&used, copy)){
                 push(copy,0,'r',&open, temp, temp->x, temp->y+1);
                  pushQ(&used, copy, 0, 'r', temp->x, temp->y+1, temp, temp->depth+1);
             }
         }
-        if(possivelMov(temp->x,temp->y,'l',temp->mov)){
+        if(isMovimentoPossivel(temp->x,temp->y,'l',temp->mov)){
             short int copy[4][4];
             copyArray(copy, temp->data);
             move_left(copy, temp->x, temp->y);
@@ -60,7 +64,7 @@ void BL(short int inicial[][4], short int final[][4]){
                  pushQ(&used, copy, 0, 'd', temp->x, temp->y-1, temp, temp->depth+1);
             }
         }
-        if(possivelMov(temp->x,temp->y,'u',temp->mov)){
+        if(isMovimentoPossivel(temp->x,temp->y,'u',temp->mov)){
             short int copy[4][4];
             copyArray(copy, temp->data);
             move_up(copy, temp->x, temp->y);

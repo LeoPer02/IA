@@ -1,7 +1,8 @@
 
+#include <malloc.h>
+#include "../Utils/BoardUtils.h"
+
 short int sizeHeap = 0;
-
-
 
 // Node
 struct Hnode {

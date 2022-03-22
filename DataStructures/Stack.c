@@ -1,4 +1,10 @@
 
+#include <stdbool.h>
+#include <stddef.h>
+#include <malloc.h>
+#include "../Utils/BoardUtils.h"
+#include "Heap.h"
+
 short int sizeStack = 0;
 
 // Nós da linked list usada na stack

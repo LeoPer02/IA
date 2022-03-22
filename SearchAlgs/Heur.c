@@ -1,20 +1,13 @@
+#include <stdlib.h>
 
 // Implementação das heuristicas
-int manh(short int a[][4], short int b[][4]);
-int sum(short int a[][4], short int b[][4]);
-
-int heuristica(short int a[][4], short int goal[][4], short int heur){
-    if(heur == 1) return manh(a,goal);
-    return sum(a,goal);
-}
-
 
 // Sumatório dos numeros fora de lugar
 int sum(short int a[][4], short int b[][4]){
     int count = 0;
     for(int i = 0; i < 4; i++){
         for(int j = 0; j < 4; j++){
-            if(a[i][j] != b[i][j] && a[i][j] != 0 && b[i][j] != 0){count++;}
+            if(a[i][j] != b[i][j]){count++;}
         }
     }
     return count;
@@ -23,15 +16,23 @@ int sum(short int a[][4], short int b[][4]){
 
 // Manhattam Distance
 int manh(short int a[][4], short int b[][4]){
-    int total = 0;
+    int total = 0, k;
     for(int i = 0; i < 4; i++){
         for(int j = 0; j < 4; j++){
-            for(int k = 0; k < 4; k++){
-                for(int l = 0; l < 4; l++){
-                    if(a[i][j] == b[k][l] && a[i][j] != 0 && b[i][j] != 0) total += abs(i-k) + abs(j-l);
+            k = 0;
+            while(1){
+                if (a[i][j] == b[k/4][k%4]) {
+                    total += abs(i-(k/4)) + abs(j-(k%4));
+                    break;
                 }
+                k++;
             }
         }
     }
     return total;
+}
+
+int heuristica(short int a[][4], short int goal[][4], short int heur){
+    if(heur == 1) return manh(a,goal);
+    return sum(a,goal);
 }

@@ -1,11 +1,16 @@
+#include <stdio.h>
+#include "Heur.h"
+#include "../Utils/BoardUtils.h"
+#include "../DataStructures/Queue.h"
+#include "Heap.h"
+#include "Movimentos.h"
+
 //Algoritmo Guloso.c
 // Este algoritmo usa 2 priority queues (PQ) para guardar os novos visitados (lista closed) e os que vão ser expandidos (lista open)
 
-
-
 void Guloso(short int inicial[][4], short int final[][4], short int Nheur){ 
     short int zero[2];                                                                                        // Array para guardar a posição do zero
-    findZero(inicial, zero);                                                                                  // Encontrar o Zero e meter no array zero
+    setZeroLocation(inicial, zero);                                                                                  // Encontrar o Zero e meter no array zero
     struct Hnode* open = newNode(inicial, heuristica(inicial, final, Nheur),'x', zero[0], zero[1], NULL, 0);  //Inicializar a lista Open inserindo o estado inicial
     struct Hnode* closed = newNode(inicial, heuristica(inicial, final, Nheur),'x', zero[0], zero[1], NULL, 0); // Inicializar a lista Closed inserindo o estado final 
     struct Hnode* temp;
@@ -20,7 +25,7 @@ void Guloso(short int inicial[][4], short int final[][4], short int Nheur){
 
         //Cada 1 dos 4 if's seguintes faz exatamente o mesmo, mas para cada movimento
 
-        if(possivelMov(temp->x,temp->y,'u',temp->mov)){                                     // Caso o movimento seja possivel de ser realizado:
+        if(isMovimentoPossivel(temp->x, temp->y, 'u', temp->mov)){                                     // Caso o movimento seja possivel de ser realizado:
             short int copy[4][4];                                                           // Criar um array(copy) para guardar o novo estado
             copyArray(copy, temp->data);                                                    // Colocalo igual ao pai
             move_up(copy, temp->x, temp->y);                                                // Aplicar o movimento, neste caso Up
@@ -29,16 +34,16 @@ void Guloso(short int inicial[][4], short int final[][4], short int Nheur){
                 pushQ(&open,copy, heur, 'u', temp->x -1, temp->y, temp, temp->depth+1);     // Enviálo para a lista open para poder eventualmente ser expandido
             }
         }
-        if(possivelMov(temp->x,temp->y,'r',temp->mov)){
+        if(isMovimentoPossivel(temp->x, temp->y, 'r', temp->mov)){
             short int copy[4][4];
             copyArray(copy, temp->data);
-            move_rigth(copy, temp->x, temp->y);
+            move_right(copy, temp->x, temp->y);
             int heur = heuristica(copy, final, Nheur);
             if(!contemQ(&closed, copy)){
                 pushQ(&open,copy, heur, 'r', temp->x, temp->y+1, temp, temp->depth+1);
             }
         }
-        if(possivelMov(temp->x,temp->y,'d',temp->mov)){
+        if(isMovimentoPossivel(temp->x, temp->y, 'd', temp->mov)){
             short int copy[4][4];
             copyArray(copy, temp->data);
             move_down(copy, temp->x, temp->y);
@@ -47,7 +52,7 @@ void Guloso(short int inicial[][4], short int final[][4], short int Nheur){
                 pushQ(&open,copy, heur, 'd', temp->x + 1, temp->y, temp, temp->depth+1);
             }
         }
-        if(possivelMov(temp->x,temp->y,'l',temp->mov)){
+        if(isMovimentoPossivel(temp->x, temp->y, 'l', temp->mov)){
             short int copy[4][4];
             copyArray(copy, temp->data);
             move_left(copy, temp->x, temp->y);
