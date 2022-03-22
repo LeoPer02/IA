@@ -1,82 +1,80 @@
 #include <stdio.h>
 #include <stdbool.h>
 #include <stdlib.h>
-#include "Stack.c"
-#include "Queue.c"
-#include "heur.c"
-
-// Eventualmente incluir flags para decidir qual Estrutura de Dados usar
-// Carregar no Pre-Processador, exemplo, se BPI usar Stack
-// gcc -DStack a.out 
-// NOTA: Pode não ser necessaŕio pois o Linker é muito prob Dinamico
-
-
-
-
-
+#include <math.h>
 int inversions(short int grid[][4]);   // Calcular inversoes
 bool possivel(short int grid1[][4], short int grid2[][4]);  // Ver se é possivel ir de 1 a outra
 bool comparar(short int grid1[][4], short int grid2[][4]);  // Ver se sao iguais
+void copyArray(short int a[][4], short int b[][4]);
+void findZero(short int a[][4], short int b[]);
+#include "./DataStructures/Heap.c"
+#include "./SearchAlgs/Heur.c"
+#include "./SearchAlgs/Movimentos.c"
+#include "./DataStructures/Stack.c"
+#include "./SearchAlgs/A*.c"
+#include "./SearchAlgs/BP.c"
+#include "./SearchAlgs/Guloso.c"
 
-   // Busca com custo    -> Heap
-   // Busca em largura   -> Hash
-   // Outras             -> Linked List, Double Linked List, Queue, Stack...
+
+
 
 int main(){
-    short int grid1[4][4], grid2[4][4];                                      // short int para minimizar espaço em memória
-    for(int i = 0; i < 4; i++){
-        for(int j = 0; j < 4; j++){
-            scanf("%hd", &grid1[i][j]);
-        }                                                                // Ler inteiros para dentro do array grid
+    short int inicial[4][4], final[4][4];                                      // short int para minimizar espaço em memória
+    printf("Por favor escolha o método de pesquisa que deseja utilizar:\n");
+    printf("Busca em Profundidade Iterativa -> 1\n");
+    printf("Algoritmo Guloso com Heuristica -> 2\n");
+    printf("Pesquisa A*                     -> 3\n");
+    short int resposta;
+    scanf("%hd", &resposta);
+    while(resposta != 1 && resposta != 2 && resposta != 3){
+        printf("Resposta Inválida, por favor escolha uma das seguintes opções:\n");
+        printf("Busca em Profundidade Iterativa -> 1\n");
+        printf("Algoritmo Guloso com Heuristica -> 2\n");
+        printf("Pesquisa A*                     -> 3\n");
+        scanf("%hd", &resposta);
     }
-    for(int i = 0; i < 4; i++){
-        for(int j = 0; j < 4; j++){
-            scanf("%hd", &grid2[i][j]);
+    if(resposta == 1){
+        // Executar Profundidade Iterativa
+    }else{
+        printf("Por favor escolha a heuristica:\n");
+        printf("Manhattan (Recomendada) -> 1\n");
+        printf("Sumatório               -> 2\n");
+        short int heur;
+        scanf("%hd", &heur);
+        while(heur != 1 && heur != 2){
+        printf("Resposta Inválida, por favor escolha uma das seguintes opções:\n");
+        printf("Manhattan (Recomendada)-> 1\n");
+        printf("Sumatório              -> 2\n");
+        scanf("%hd", &heur);
         }
-    } 
-
-
-    #ifdef DEBBUG
-    printf(" ---------------\nStack:\n ---------------\n");
-    struct node* root = (struct node*)malloc(sizeof(struct node));
-    copyArray(root->data, grid1);
-    root -> next = NULL;
-    printf("adicionado 1 elemento \n");
-    top(&root);
-    push(grid2,&root);
-    printf("adicionado 1 elemento \n");
-    top(&root);
-    pop(&root);
-    top(&root);
-    printf("Vazia: %d\n", isEmpty(&root));
-    pop(&root);
-    top(&root);
-    printf("Vazia: %d\n", isEmpty(&root));
-
-    // Queue ainda não funciona
-    printf(" ---------------\nLista:\n ---------------\n");
-    Node* lista = (Node*)malloc(sizeof(Node));
-    enqueue(&lista, grid1, 1);
-    enqueue(&lista, grid2, 1);
-    printQ(&lista);
-    dequeue(&lista);
-    printQ(&lista);
-    printf("Vazia: %d\n", isEmptyQ(&lista));
-    dequeue(&lista);
-    printQ(&lista);
-    printf("Vazia: %d\n", isEmptyQ(&lista));
-    printf(" ---------------\n");
-
-    printf("Sumatorio: %d\n", sum(grid1, grid2));
-    printf("Manhattan: %d\n", manh(grid1, grid2));
-    #endif
-    
+        printf("Introduza o estado inicial e final, respetivamente:\n");
+        for(int i = 0; i < 4; i++){
+            for(int j = 0; j < 4; j++){
+                scanf("%hd", &inicial[i][j]);
+            }                                                          
+        }
+        for(int i = 0; i < 4; i++){
+            for(int j = 0; j < 4; j++){
+                scanf("%hd", &final[i][j]);
+            }
+        } 
+        if(!possivel(inicial, final)){
+            printf("Impossivel chegar ao estado final!\n");
+        }else{
+            if(resposta == 3) {
+                printf("Calculando...\n\n");
+                A_star(inicial, final, heur);
+                return 0;
+            }    
+            printf("Calculando... \n\n");
+            Guloso(inicial, final, heur);
+        }
+    }
 
     return 0;
 }
 
 //Percorre a lista e verifica quantos elementos que estão depois de i são maiores que ele
-//Foi testada e funcionou corretamente
 int inversions(short int grid[][4]){
     int count = 0;
     for(int i = 0; i < 4; i++){
@@ -98,7 +96,6 @@ int inversions(short int grid[][4]){
 }
 
 // Verifica se é possivel chegar de um estado ao outro
-// Foi testada e funcionou em ambos os casos
 bool possivel(short int grid1[][4], short int grid2[][4]){
     short int inv1 = inversions(grid1);
     short int inv2 = inversions(grid2);
@@ -121,7 +118,7 @@ bool possivel(short int grid1[][4], short int grid2[][4]){
 }
 
 // Verifica se o estado atual é igual ao final, ou seja, se terminou
-// Foi testada e funcionou em ambos os casos
+
 bool comparar(short int grid1[][4], short int grid2[][4]){
     for(int i = 0; i < 4; i++){
         for(int j = 0; j < 4; j++){
@@ -129,4 +126,23 @@ bool comparar(short int grid1[][4], short int grid2[][4]){
         }
     }
     return true;
+}
+
+void copyArray(short int a[][4], short int b[][4]){
+    for(int i = 0; i < 4; i++){
+        for(int j = 0; j < 4; j++){
+            a[i][j] = b[i][j];
+        }
+    }
+}
+void findZero(short int a[][4], short int b[]){
+    for(int i = 0; i < 4; i++){
+        for(int j = 0; j < 4; j++){
+            if(a[i][j] == 0){
+                b[0] = i;
+                b[1] = j;
+                return;
+            }
+        }
+    }
 }
