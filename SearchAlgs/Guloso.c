@@ -1,9 +1,8 @@
 #include <stdio.h>
-#include "Heur.h"
+#include "../SearchAlgs/Heur.h"
 #include "../Utils/BoardUtils.h"
-#include "../DataStructures/Queue.h"
-#include "Heap.h"
-#include "Movimentos.h"
+#include "../DataStructures/Heap.h"
+#include "../SearchAlgs/Movimentos.h"
 
 //Algoritmo Guloso.c
 // Este algoritmo usa 2 priority queues (PQ) para guardar os novos visitados (lista closed) e os que vão ser expandidos (lista open)

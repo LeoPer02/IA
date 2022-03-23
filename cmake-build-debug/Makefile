@@ -561,6 +561,30 @@ Utils/BoardUtils.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/IA.dir/build.make CMakeFiles/IA.dir/Utils/BoardUtils.c.s
 .PHONY : Utils/BoardUtils.c.s
 
+Utils/Timer.o: Utils/Timer.c.o
+.PHONY : Utils/Timer.o
+
+# target to build an object file
+Utils/Timer.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/IA.dir/build.make CMakeFiles/IA.dir/Utils/Timer.c.o
+.PHONY : Utils/Timer.c.o
+
+Utils/Timer.i: Utils/Timer.c.i
+.PHONY : Utils/Timer.i
+
+# target to preprocess a source file
+Utils/Timer.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/IA.dir/build.make CMakeFiles/IA.dir/Utils/Timer.c.i
+.PHONY : Utils/Timer.c.i
+
+Utils/Timer.s: Utils/Timer.c.s
+.PHONY : Utils/Timer.s
+
+# target to generate assembly for a file
+Utils/Timer.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/IA.dir/build.make CMakeFiles/IA.dir/Utils/Timer.c.s
+.PHONY : Utils/Timer.c.s
+
 main.o: main.c.o
 .PHONY : main.o
 
@@ -648,6 +672,9 @@ help:
 	@echo "... Utils/BoardUtils.o"
 	@echo "... Utils/BoardUtils.i"
 	@echo "... Utils/BoardUtils.s"
+	@echo "... Utils/Timer.o"
+	@echo "... Utils/Timer.i"
+	@echo "... Utils/Timer.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

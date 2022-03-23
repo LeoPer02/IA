@@ -4,7 +4,7 @@
 #include "../DataStructures/HashStack.h"
 #include "../Utils/BoardUtils.h"
 
-BFSBoard* bfs(short int start[][4], short int goal[][4]) {
+void bfs(short int start[][4], short int goal[][4]) {
     const char movementOptions[4] = {'u', 'r', 'd', 'l'};
 
     BFSBoard* startBoard = getNewBoardBFS(start);
@@ -22,8 +22,7 @@ BFSBoard* bfs(short int start[][4], short int goal[][4]) {
 
     while (list != NULL) {
         if (comparar(list->board->grid, goal)) { // Checagem do topo da list
-            printBoardListSize(list);
-            return list->board; // Se encontrado o objetivo, retorna o resultado
+            break; // Se encontrado o objetivo, retorna o resultado
         }
         for (int i = 0; i < 4; i++) {
             if (isMovimentoPossivel(list->board->zeroLocation[0], list->board->zeroLocation[1], movementOptions[i], list->board->movementStack->move)) {
@@ -40,5 +39,11 @@ BFSBoard* bfs(short int start[][4], short int goal[][4]) {
         popBoardFromList(&list);
     }
     deleteHashStack(&visitedStack);
-    return NULL;
+
+    if (list != NULL) {
+        printf("Solution found!\n");
+        printMovementStack(list->board->movementStack);
+    } else {
+        printf("Something went wrong and the algorithm was unable to find a result.\n");
+    }
 }

@@ -7,6 +7,6 @@
 
 #include "../DataStructures/BFSBoard.h"
 
-BFSBoard* bfs(short int start[][4], short int goal[][4]);
+void bfs(short int start[][4], short int goal[][4]);
 
 #endif //IA_BFS_H

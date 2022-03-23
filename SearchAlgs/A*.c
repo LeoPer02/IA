@@ -1,8 +1,10 @@
 #include <stdio.h>
-#include "Movimentos.h"
+
+#include "../SearchAlgs/Movimentos.h"
 #include "../Utils/BoardUtils.h"
-#include "Heap.h"
-#include "Heur.h"
+#include "../DataStructures/Heap.h"
+#include "../SearchAlgs/Heur.h"
+#include "../Utils/Timer.h"
 
 //Algoritmo A*.c
 // Este algoritmo usa 2 priority queues (PQ) para guardar os novos visitados (lista closed) e os que vão ser expandidos (lista open)

@@ -114,8 +114,8 @@ void returnPathQ(struct Hnode** stack){
     }
     printf("Movimentos: ");
     for(int i = depth-1; i >= 0; i--){
-        printf("%c", array[i]);
+        printf("%c ", array[i]);
     }
-    printf("   Depth = %d\n", depth);
+    printf("\nDepth = %d\n", depth);
 }
  

@@ -35,6 +35,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/IA.dir/SearchAlgs/Movimentos.c.o.d"
   "CMakeFiles/IA.dir/Utils/BoardUtils.c.o"
   "CMakeFiles/IA.dir/Utils/BoardUtils.c.o.d"
+  "CMakeFiles/IA.dir/Utils/Timer.c.o"
+  "CMakeFiles/IA.dir/Utils/Timer.c.o.d"
   "CMakeFiles/IA.dir/main.c.o"
   "CMakeFiles/IA.dir/main.c.o.d"
   "IA"

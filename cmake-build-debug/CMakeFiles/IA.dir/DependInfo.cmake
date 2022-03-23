@@ -26,6 +26,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/matheus/UP/IA/trabalhos/IA/SearchAlgs/IDS.c" "CMakeFiles/IA.dir/SearchAlgs/IDS.c.o" "gcc" "CMakeFiles/IA.dir/SearchAlgs/IDS.c.o.d"
   "/home/matheus/UP/IA/trabalhos/IA/SearchAlgs/Movimentos.c" "CMakeFiles/IA.dir/SearchAlgs/Movimentos.c.o" "gcc" "CMakeFiles/IA.dir/SearchAlgs/Movimentos.c.o.d"
   "/home/matheus/UP/IA/trabalhos/IA/Utils/BoardUtils.c" "CMakeFiles/IA.dir/Utils/BoardUtils.c.o" "gcc" "CMakeFiles/IA.dir/Utils/BoardUtils.c.o.d"
+  "/home/matheus/UP/IA/trabalhos/IA/Utils/Timer.c" "CMakeFiles/IA.dir/Utils/Timer.c.o" "gcc" "CMakeFiles/IA.dir/Utils/Timer.c.o.d"
   "/home/matheus/UP/IA/trabalhos/IA/main.c" "CMakeFiles/IA.dir/main.c.o" "gcc" "CMakeFiles/IA.dir/main.c.o.d"
   )
 

@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.21)
+cmake_minimum_required(VERSION 3.16)
 project(IA C)
 
 set(CMAKE_C_STANDARD 11)
@@ -41,4 +41,13 @@ add_executable(IA
         SearchAlgs/IDS.h
         SearchAlgs/Movimentos.c
         SearchAlgs/Movimentos.h
-        main.c Utils/BoardUtils.c Utils/BoardUtils.h SearchAlgs/Heur.h DataStructures/Queue.h DataStructures/Heap.h SearchAlgs/A*.h SearchAlgs/BL.h DataStructures/Stack.h SearchAlgs/BP.h SearchAlgs/Guloso.h)
+        main.c Utils/BoardUtils.c
+        Utils/BoardUtils.h
+        SearchAlgs/Heur.h
+        DataStructures/Queue.h
+        DataStructures/Heap.h
+        SearchAlgs/A*.h
+        SearchAlgs/BL.h
+        DataStructures/Stack.h
+        SearchAlgs/BP.h
+        SearchAlgs/Guloso.h Utils/Timer.c Utils/Timer.h)

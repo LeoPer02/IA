@@ -188,6 +188,12 @@
 		<Unit filename="/home/matheus/UP/IA/trabalhos/IA/Utils/BoardUtils.h">
 			<Option target="IA"/>
 		</Unit>
+		<Unit filename="/home/matheus/UP/IA/trabalhos/IA/Utils/Timer.c">
+			<Option target="IA"/>
+		</Unit>
+		<Unit filename="/home/matheus/UP/IA/trabalhos/IA/Utils/Timer.h">
+			<Option target="IA"/>
+		</Unit>
 		<Unit filename="/home/matheus/UP/IA/trabalhos/IA/main.c">
 			<Option target="IA"/>
 		</Unit>

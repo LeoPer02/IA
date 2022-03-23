@@ -12,6 +12,6 @@
 
 IDSBoard* dls(IDSBoard* start, short int goal[][4]);
 
-IDSBoard* ids(short int start[][4], short int goal[][4]);
+void ids(short int start[][4], short int goal[][4]);
 
 #endif //IA_IDS_H

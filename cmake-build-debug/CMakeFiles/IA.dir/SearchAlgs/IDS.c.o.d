@@ -21,7 +21,19 @@ CMakeFiles/IA.dir/SearchAlgs/IDS.c.o: \
  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
- /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
+ /usr/include/x86_64-linux-gnu/bits/sys_errlist.h /usr/include/time.h \
+ /usr/include/x86_64-linux-gnu/bits/time.h \
+ /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+ /usr/include/x86_64-linux-gnu/bits/endian.h \
+ /usr/include/x86_64-linux-gnu/bits/endianness.h \
+ /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
+ /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
  /home/matheus/UP/IA/trabalhos/IA/SearchAlgs/../DataStructures/BoardStack.h \
  /home/matheus/UP/IA/trabalhos/IA/SearchAlgs/../DataStructures/IDSBoard.h \
  /home/matheus/UP/IA/trabalhos/IA/SearchAlgs/../DataStructures/MovementStack.h \
@@ -29,4 +41,5 @@ CMakeFiles/IA.dir/SearchAlgs/IDS.c.o: \
  /home/matheus/UP/IA/trabalhos/IA/SearchAlgs/../DataStructures/HashStack.h \
  /home/matheus/UP/IA/trabalhos/IA/SearchAlgs/../Utils/BoardUtils.h \
  /home/matheus/UP/IA/trabalhos/IA/SearchAlgs/../Utils/../DataStructures/MovementStack.h \
+ /home/matheus/UP/IA/trabalhos/IA/SearchAlgs/../Utils/Timer.h \
  /home/matheus/UP/IA/trabalhos/IA/SearchAlgs/Movimentos.h
