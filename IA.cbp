@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="IA"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/matheus/UP/IA/trabalhos/IA"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/matheus/UP/IA/trabalhos/IA/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/matheus/UP/IA/trabalhos/IA/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/matheus/UP/IA/trabalhos/IA/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/matheus/UP/IA/trabalhos/IA/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/matheus/UP/IA/trabalhos/IA"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/matheus/UP/IA/trabalhos/IA/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/matheus/UP/IA/trabalhos/IA/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/matheus/UP/IA/trabalhos/IA/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/matheus/UP/IA/trabalhos/IA/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/matheus/UP/IA/trabalhos/IA"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/matheus/UP/IA/trabalhos/IA/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/matheus/UP/IA/trabalhos/IA/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/matheus/UP/IA/trabalhos/IA/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/matheus/UP/IA/trabalhos/IA/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="IA">
+				<Option output="/home/matheus/UP/IA/trabalhos/IA/IA" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/matheus/UP/IA/trabalhos/IA"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/matheus/UP/IA/trabalhos/IA/DataStructures"/>
+					<Add directory="/home/matheus/UP/IA/trabalhos/IA/SearchAlgs"/>
+					<Add directory="/home/matheus/UP/IA/trabalhos/IA/Utils"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/matheus/UP/IA/trabalhos/IA/Makefile&quot;  VERBOSE=1 IA"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/matheus/UP/IA/trabalhos/IA/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/matheus/UP/IA/trabalhos/IA/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/matheus/UP/IA/trabalhos/IA/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="IA/fast">
+				<Option output="/home/matheus/UP/IA/trabalhos/IA/IA" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/matheus/UP/IA/trabalhos/IA"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/matheus/UP/IA/trabalhos/IA/DataStructures"/>
+					<Add directory="/home/matheus/UP/IA/trabalhos/IA/SearchAlgs"/>
+					<Add directory="/home/matheus/UP/IA/trabalhos/IA/Utils"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/matheus/UP/IA/trabalhos/IA/Makefile&quot;  VERBOSE=1 IA/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/matheus/UP/IA/trabalhos/IA/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/matheus/UP/IA/trabalhos/IA/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/matheus/UP/IA/trabalhos/IA/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/matheus/UP/IA/trabalhos/IA/DataStructures/BFSBoard.c">
+			<Option target="IA"/>
+		</Unit>
+		<Unit filename="/home/matheus/UP/IA/trabalhos/IA/DataStructures/BFSBoard.h">
+			<Option target="IA"/>
+		</Unit>
+		<Unit filename="/home/matheus/UP/IA/trabalhos/IA/DataStructures/BoardList.c">
+			<Option target="IA"/>
+		</Unit>
+		<Unit filename="/home/matheus/UP/IA/trabalhos/IA/DataStructures/BoardList.h">
+			<Option target="IA"/>
+		</Unit>
+		<Unit filename="/home/matheus/UP/IA/trabalhos/IA/DataStructures/BoardStack.c">
+			<Option target="IA"/>
+		</Unit>
+		<Unit filename="/home/matheus/UP/IA/trabalhos/IA/DataStructures/BoardStack.h">
+			<Option target="IA"/>
+		</Unit>
+		<Unit filename="/home/matheus/UP/IA/trabalhos/IA/DataStructures/DFSBoard.c">
+			<Option target="IA"/>
+		</Unit>
+		<Unit filename="/home/matheus/UP/IA/trabalhos/IA/DataStructures/DFSBoard.h">
+			<Option target="IA"/>
+		</Unit>
+		<Unit filename="/home/matheus/UP/IA/trabalhos/IA/DataStructures/DFSBoardStack.c">
+			<Option target="IA"/>
+		</Unit>
+		<Unit filename="/home/matheus/UP/IA/trabalhos/IA/DataStructures/DFSBoardStack.h">
+			<Option target="IA"/>
+		</Unit>
+		<Unit filename="/home/matheus/UP/IA/trabalhos/IA/DataStructures/HashStack.c">
+			<Option target="IA"/>
+		</Unit>
+		<Unit filename="/home/matheus/UP/IA/trabalhos/IA/DataStructures/HashStack.h">
+			<Option target="IA"/>
+		</Unit>
+		<Unit filename="/home/matheus/UP/IA/trabalhos/IA/DataStructures/Heap.c">
+			<Option target="IA"/>
+		</Unit>
+		<Unit filename="/home/matheus/UP/IA/trabalhos/IA/DataStructures/Heap.h">
+			<Option target="IA"/>
+		</Unit>
+		<Unit filename="/home/matheus/UP/IA/trabalhos/IA/DataStructures/IDSBoard.c">
+			<Option target="IA"/>
+		</Unit>
+		<Unit filename="/home/matheus/UP/IA/trabalhos/IA/DataStructures/IDSBoard.h">
+			<Option target="IA"/>
+		</Unit>
+		<Unit filename="/home/matheus/UP/IA/trabalhos/IA/DataStructures/MovementStack.c">
+			<Option target="IA"/>
+		</Unit>
+		<Unit filename="/home/matheus/UP/IA/trabalhos/IA/DataStructures/MovementStack.h">
+			<Option target="IA"/>
+		</Unit>
+		<Unit filename="/home/matheus/UP/IA/trabalhos/IA/DataStructures/Queue.c">
+			<Option target="IA"/>
+		</Unit>
+		<Unit filename="/home/matheus/UP/IA/trabalhos/IA/DataStructures/Queue.h">
+			<Option target="IA"/>
+		</Unit>
+		<Unit filename="/home/matheus/UP/IA/trabalhos/IA/DataStructures/Stack.c">
+			<Option target="IA"/>
+		</Unit>
+		<Unit filename="/home/matheus/UP/IA/trabalhos/IA/DataStructures/Stack.h">
+			<Option target="IA"/>
+		</Unit>
+		<Unit filename="/home/matheus/UP/IA/trabalhos/IA/SearchAlgs/A*.c">
+			<Option target="IA"/>
+		</Unit>
+		<Unit filename="/home/matheus/UP/IA/trabalhos/IA/SearchAlgs/A*.h">
+			<Option target="IA"/>
+		</Unit>
+		<Unit filename="/home/matheus/UP/IA/trabalhos/IA/SearchAlgs/BFS.c">
+			<Option target="IA"/>
+		</Unit>
+		<Unit filename="/home/matheus/UP/IA/trabalhos/IA/SearchAlgs/BFS.h">
+			<Option target="IA"/>
+		</Unit>
+		<Unit filename="/home/matheus/UP/IA/trabalhos/IA/SearchAlgs/BP.c">
+			<Option target="IA"/>
+		</Unit>
+		<Unit filename="/home/matheus/UP/IA/trabalhos/IA/SearchAlgs/BP.h">
+			<Option target="IA"/>
+		</Unit>
+		<Unit filename="/home/matheus/UP/IA/trabalhos/IA/SearchAlgs/DFS.c">
+			<Option target="IA"/>
+		</Unit>
+		<Unit filename="/home/matheus/UP/IA/trabalhos/IA/SearchAlgs/DFS.h">
+			<Option target="IA"/>
+		</Unit>
+		<Unit filename="/home/matheus/UP/IA/trabalhos/IA/SearchAlgs/Guloso.c">
+			<Option target="IA"/>
+		</Unit>
+		<Unit filename="/home/matheus/UP/IA/trabalhos/IA/SearchAlgs/Guloso.h">
+			<Option target="IA"/>
+		</Unit>
+		<Unit filename="/home/matheus/UP/IA/trabalhos/IA/SearchAlgs/Heur.c">
+			<Option target="IA"/>
+		</Unit>
+		<Unit filename="/home/matheus/UP/IA/trabalhos/IA/SearchAlgs/Heur.h">
+			<Option target="IA"/>
+		</Unit>
+		<Unit filename="/home/matheus/UP/IA/trabalhos/IA/SearchAlgs/IDS.c">
+			<Option target="IA"/>
+		</Unit>
+		<Unit filename="/home/matheus/UP/IA/trabalhos/IA/SearchAlgs/IDS.h">
+			<Option target="IA"/>
+		</Unit>
+		<Unit filename="/home/matheus/UP/IA/trabalhos/IA/SearchAlgs/Movimentos.c">
+			<Option target="IA"/>
+		</Unit>
+		<Unit filename="/home/matheus/UP/IA/trabalhos/IA/SearchAlgs/Movimentos.h">
+			<Option target="IA"/>
+		</Unit>
+		<Unit filename="/home/matheus/UP/IA/trabalhos/IA/Utils/BoardUtils.c">
+			<Option target="IA"/>
+		</Unit>
+		<Unit filename="/home/matheus/UP/IA/trabalhos/IA/Utils/BoardUtils.h">
+			<Option target="IA"/>
+		</Unit>
+		<Unit filename="/home/matheus/UP/IA/trabalhos/IA/Utils/Timer.c">
+			<Option target="IA"/>
+		</Unit>
+		<Unit filename="/home/matheus/UP/IA/trabalhos/IA/Utils/Timer.h">
+			<Option target="IA"/>
+		</Unit>
+		<Unit filename="/home/matheus/UP/IA/trabalhos/IA/main.c">
+			<Option target="IA"/>
+		</Unit>
+		<Unit filename="/home/matheus/UP/IA/trabalhos/IA/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

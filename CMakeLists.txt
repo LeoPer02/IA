@@ -5,6 +5,7 @@ set(CMAKE_C_STANDARD 11)
 
 include_directories(DataStructures)
 include_directories(SearchAlgs)
+include_directories()
 
 add_executable(IA
         DataStructures/BFSBoard.c

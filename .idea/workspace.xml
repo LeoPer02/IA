@@ -15,36 +15,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53eac60c-7c0f-4c18-a4f3-a7f85d6cc8a4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/IA" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IA.cbp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataAnalysis/analysis.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/DataAnalysis/analysis.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataAnalysis/.~lock.data.csv#" beforeDir="false" afterPath="$PROJECT_DIR$/DataAnalysis/.~lock.data.csv#" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataAnalysis/data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/DataAnalysis/data.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SearchAlgs/A*.c" beforeDir="false" afterPath="$PROJECT_DIR$/SearchAlgs/A*.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SearchAlgs/BFS.c" beforeDir="false" afterPath="$PROJECT_DIR$/SearchAlgs/BFS.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SearchAlgs/BL.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SearchAlgs/BL.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SearchAlgs/BP.c" beforeDir="false" afterPath="$PROJECT_DIR$/SearchAlgs/BP.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SearchAlgs/Guloso.c" beforeDir="false" afterPath="$PROJECT_DIR$/SearchAlgs/Guloso.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SearchAlgs/IDS.c" beforeDir="false" afterPath="$PROJECT_DIR$/SearchAlgs/IDS.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Utils/Timer.c" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/Timer.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/IA.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/IA.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/IA.dir/SearchAlgs/BFS.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/IA.dir/SearchAlgs/BFS.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/IA.dir/SearchAlgs/IDS.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/IA.dir/SearchAlgs/IDS.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/IA.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/IA.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/IA.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/IA.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/IA.dir/compiler_depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/IA.dir/compiler_depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/IA.dir/compiler_depend.internal" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/IA.dir/compiler_depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/IA.dir/compiler_depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/IA.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/IA.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/IA.dir/main.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/IA.dir/main.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/IA.dir/main.c.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/IA.dir/main.c.o.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/IA.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/IA.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/IA" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/IA" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/IA.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/IA.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake_install.cmake" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +100,7 @@
       <workItem from="1647964999957" duration="1000" />
       <workItem from="1647972604540" duration="798000" />
       <workItem from="1648041900339" duration="9781000" />
-      <workItem from="1648113440353" duration="14580000" />
+      <workItem from="1648113440353" duration="17036000" />
     </task>
     <servers />
   </component>
