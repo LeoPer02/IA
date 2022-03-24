@@ -16,25 +16,20 @@
   <component name="ChangeListManager">
     <list default="true" id="53eac60c-7c0f-4c18-a4f3-a7f85d6cc8a4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataStructures/Heap.c" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/Heap.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Inputs/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Inputs/input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Inputs/input2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Inputs/input2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Inputs/input3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Inputs/input3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Inputs/input4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Inputs/input4.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataAnalysis/analysis.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/DataAnalysis/analysis.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SearchAlgs/A*.c" beforeDir="false" afterPath="$PROJECT_DIR$/SearchAlgs/A*.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SearchAlgs/BFS.c" beforeDir="false" afterPath="$PROJECT_DIR$/SearchAlgs/BFS.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SearchAlgs/BFS.h" beforeDir="false" afterPath="$PROJECT_DIR$/SearchAlgs/BFS.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SearchAlgs/BL.h" beforeDir="false" afterPath="$PROJECT_DIR$/SearchAlgs/BL.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SearchAlgs/BP.h" beforeDir="false" afterPath="$PROJECT_DIR$/SearchAlgs/BP.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SearchAlgs/BL.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SearchAlgs/BL.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SearchAlgs/BP.c" beforeDir="false" afterPath="$PROJECT_DIR$/SearchAlgs/BP.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SearchAlgs/Guloso.c" beforeDir="false" afterPath="$PROJECT_DIR$/SearchAlgs/Guloso.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SearchAlgs/IDS.c" beforeDir="false" afterPath="$PROJECT_DIR$/SearchAlgs/IDS.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SearchAlgs/IDS.h" beforeDir="false" afterPath="$PROJECT_DIR$/SearchAlgs/IDS.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utils/Timer.c" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/Timer.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/IA.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/IA.dir/DependInfo.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/IA.dir/SearchAlgs/BFS.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/IA.dir/SearchAlgs/BFS.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/IA.dir/SearchAlgs/IDS.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/IA.dir/SearchAlgs/IDS.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/IA.dir/SearchAlgs/IDS.c.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/IA.dir/SearchAlgs/IDS.c.o.d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/IA.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/IA.dir/build.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/IA.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/IA.dir/cmake_clean.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/IA.dir/compiler_depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/IA.dir/compiler_depend.internal" afterDir="false" />
@@ -100,12 +95,12 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+    <configuration name="IA" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="IA" TARGET_NAME="IA" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="IA" RUN_TARGET_NAME="IA">
       <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IA" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="IA" TARGET_NAME="IA" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="IA" RUN_TARGET_NAME="IA">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -122,7 +117,8 @@
       <workItem from="1647957954730" duration="1427000" />
       <workItem from="1647964999957" duration="1000" />
       <workItem from="1647972604540" duration="798000" />
-      <workItem from="1648041900339" duration="9231000" />
+      <workItem from="1648041900339" duration="9781000" />
+      <workItem from="1648113440353" duration="14580000" />
     </task>
     <servers />
   </component>

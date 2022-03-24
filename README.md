@@ -1,17 +1,27 @@
 # IA
 
-Configurações:
+### Configurações:
 
-Este programa foi escrito usando C nos Sistemas operativos [Fill] versão [Fill].
-Em termos de compiladores foi usado o gcc versão [Fill]
+Este programa foi escrito usando C nos Sistemas operativos Ubuntu versão 20.04.3 LTS.
+Em termos de compiladores foi usado o cmake.
 
 
-Modo de utilização do programa:
+## Modo de utilização do programa:
 
 Para efeitos de simplificação iremo-nos referir á Pasta principal como "IA".
-Dentro de IA encontra-rá 2 pastas ("SearchAlgs" e "DataStructures") e um ficheiro main.c
+Dentro de IA encontra-rá 3 pastas (`SearchAlgs`, `DataStructures` e `Utils`) e um ficheiro main.c.
 
-Para a compilação do ficheiro deverá apenas usar [ gcc -o nomeficheiro main.c  ] ou apenas gcc main.c (Com um eventual -Wall caso ache necessário)
+Para a compilação do ficheiro deverá instalar o programa cmake através do comando
+```
+sudo apt-get install cmake
+```
+e em seguida executar
+```
+cmake <caminho até a pasta IA>
+
+```
+
+
 Após a execução do programa [ time ./nomeficheiro ] será-lhe perguntado qual algoritmo pretende utilizar, e nos casos A* e guloso, qual heurista pretende usar.
 De seguida deverá apenas introduzir o estado inicial e final, respetivamente.
 

@@ -1,4 +1,5 @@
 #include <time.h>
+#include <stdio.h>
 
 clock_t startTimer() {
     return clock();
@@ -6,5 +7,5 @@ clock_t startTimer() {
 
 void stopTimer(clock_t t) {
     t = clock() - t;
-    printf("Time elapsed: %.4f secs\n", ((double)t)/CLOCKS_PER_SEC);
+    printf("Time elapsed: %.6f secs\n", ((double)t)/CLOCKS_PER_SEC);
 }

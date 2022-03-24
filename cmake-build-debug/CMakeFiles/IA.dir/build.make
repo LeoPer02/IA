@@ -209,24 +209,10 @@ CMakeFiles/IA.dir/SearchAlgs/A*.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/IA.dir/SearchAlgs/A*.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/matheus/UP/IA/trabalhos/IA/SearchAlgs/A*.c" -o "CMakeFiles/IA.dir/SearchAlgs/A*.c.s"
 
-CMakeFiles/IA.dir/SearchAlgs/BL.c.o: CMakeFiles/IA.dir/flags.make
-CMakeFiles/IA.dir/SearchAlgs/BL.c.o: ../SearchAlgs/BL.c
-CMakeFiles/IA.dir/SearchAlgs/BL.c.o: CMakeFiles/IA.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matheus/UP/IA/trabalhos/IA/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/IA.dir/SearchAlgs/BL.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/IA.dir/SearchAlgs/BL.c.o -MF CMakeFiles/IA.dir/SearchAlgs/BL.c.o.d -o CMakeFiles/IA.dir/SearchAlgs/BL.c.o -c /home/matheus/UP/IA/trabalhos/IA/SearchAlgs/BL.c
-
-CMakeFiles/IA.dir/SearchAlgs/BL.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/IA.dir/SearchAlgs/BL.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/matheus/UP/IA/trabalhos/IA/SearchAlgs/BL.c > CMakeFiles/IA.dir/SearchAlgs/BL.c.i
-
-CMakeFiles/IA.dir/SearchAlgs/BL.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/IA.dir/SearchAlgs/BL.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/matheus/UP/IA/trabalhos/IA/SearchAlgs/BL.c -o CMakeFiles/IA.dir/SearchAlgs/BL.c.s
-
 CMakeFiles/IA.dir/SearchAlgs/BP.c.o: CMakeFiles/IA.dir/flags.make
 CMakeFiles/IA.dir/SearchAlgs/BP.c.o: ../SearchAlgs/BP.c
 CMakeFiles/IA.dir/SearchAlgs/BP.c.o: CMakeFiles/IA.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matheus/UP/IA/trabalhos/IA/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/IA.dir/SearchAlgs/BP.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matheus/UP/IA/trabalhos/IA/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/IA.dir/SearchAlgs/BP.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/IA.dir/SearchAlgs/BP.c.o -MF CMakeFiles/IA.dir/SearchAlgs/BP.c.o.d -o CMakeFiles/IA.dir/SearchAlgs/BP.c.o -c /home/matheus/UP/IA/trabalhos/IA/SearchAlgs/BP.c
 
 CMakeFiles/IA.dir/SearchAlgs/BP.c.i: cmake_force
@@ -240,7 +226,7 @@ CMakeFiles/IA.dir/SearchAlgs/BP.c.s: cmake_force
 CMakeFiles/IA.dir/SearchAlgs/Guloso.c.o: CMakeFiles/IA.dir/flags.make
 CMakeFiles/IA.dir/SearchAlgs/Guloso.c.o: ../SearchAlgs/Guloso.c
 CMakeFiles/IA.dir/SearchAlgs/Guloso.c.o: CMakeFiles/IA.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matheus/UP/IA/trabalhos/IA/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/IA.dir/SearchAlgs/Guloso.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matheus/UP/IA/trabalhos/IA/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/IA.dir/SearchAlgs/Guloso.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/IA.dir/SearchAlgs/Guloso.c.o -MF CMakeFiles/IA.dir/SearchAlgs/Guloso.c.o.d -o CMakeFiles/IA.dir/SearchAlgs/Guloso.c.o -c /home/matheus/UP/IA/trabalhos/IA/SearchAlgs/Guloso.c
 
 CMakeFiles/IA.dir/SearchAlgs/Guloso.c.i: cmake_force
@@ -254,7 +240,7 @@ CMakeFiles/IA.dir/SearchAlgs/Guloso.c.s: cmake_force
 CMakeFiles/IA.dir/SearchAlgs/BFS.c.o: CMakeFiles/IA.dir/flags.make
 CMakeFiles/IA.dir/SearchAlgs/BFS.c.o: ../SearchAlgs/BFS.c
 CMakeFiles/IA.dir/SearchAlgs/BFS.c.o: CMakeFiles/IA.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matheus/UP/IA/trabalhos/IA/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/IA.dir/SearchAlgs/BFS.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matheus/UP/IA/trabalhos/IA/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/IA.dir/SearchAlgs/BFS.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/IA.dir/SearchAlgs/BFS.c.o -MF CMakeFiles/IA.dir/SearchAlgs/BFS.c.o.d -o CMakeFiles/IA.dir/SearchAlgs/BFS.c.o -c /home/matheus/UP/IA/trabalhos/IA/SearchAlgs/BFS.c
 
 CMakeFiles/IA.dir/SearchAlgs/BFS.c.i: cmake_force
@@ -268,7 +254,7 @@ CMakeFiles/IA.dir/SearchAlgs/BFS.c.s: cmake_force
 CMakeFiles/IA.dir/SearchAlgs/Heur.c.o: CMakeFiles/IA.dir/flags.make
 CMakeFiles/IA.dir/SearchAlgs/Heur.c.o: ../SearchAlgs/Heur.c
 CMakeFiles/IA.dir/SearchAlgs/Heur.c.o: CMakeFiles/IA.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matheus/UP/IA/trabalhos/IA/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/IA.dir/SearchAlgs/Heur.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matheus/UP/IA/trabalhos/IA/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/IA.dir/SearchAlgs/Heur.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/IA.dir/SearchAlgs/Heur.c.o -MF CMakeFiles/IA.dir/SearchAlgs/Heur.c.o.d -o CMakeFiles/IA.dir/SearchAlgs/Heur.c.o -c /home/matheus/UP/IA/trabalhos/IA/SearchAlgs/Heur.c
 
 CMakeFiles/IA.dir/SearchAlgs/Heur.c.i: cmake_force
@@ -282,7 +268,7 @@ CMakeFiles/IA.dir/SearchAlgs/Heur.c.s: cmake_force
 CMakeFiles/IA.dir/SearchAlgs/IDS.c.o: CMakeFiles/IA.dir/flags.make
 CMakeFiles/IA.dir/SearchAlgs/IDS.c.o: ../SearchAlgs/IDS.c
 CMakeFiles/IA.dir/SearchAlgs/IDS.c.o: CMakeFiles/IA.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matheus/UP/IA/trabalhos/IA/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/IA.dir/SearchAlgs/IDS.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matheus/UP/IA/trabalhos/IA/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/IA.dir/SearchAlgs/IDS.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/IA.dir/SearchAlgs/IDS.c.o -MF CMakeFiles/IA.dir/SearchAlgs/IDS.c.o.d -o CMakeFiles/IA.dir/SearchAlgs/IDS.c.o -c /home/matheus/UP/IA/trabalhos/IA/SearchAlgs/IDS.c
 
 CMakeFiles/IA.dir/SearchAlgs/IDS.c.i: cmake_force
@@ -296,7 +282,7 @@ CMakeFiles/IA.dir/SearchAlgs/IDS.c.s: cmake_force
 CMakeFiles/IA.dir/SearchAlgs/Movimentos.c.o: CMakeFiles/IA.dir/flags.make
 CMakeFiles/IA.dir/SearchAlgs/Movimentos.c.o: ../SearchAlgs/Movimentos.c
 CMakeFiles/IA.dir/SearchAlgs/Movimentos.c.o: CMakeFiles/IA.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matheus/UP/IA/trabalhos/IA/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/IA.dir/SearchAlgs/Movimentos.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matheus/UP/IA/trabalhos/IA/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/IA.dir/SearchAlgs/Movimentos.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/IA.dir/SearchAlgs/Movimentos.c.o -MF CMakeFiles/IA.dir/SearchAlgs/Movimentos.c.o.d -o CMakeFiles/IA.dir/SearchAlgs/Movimentos.c.o -c /home/matheus/UP/IA/trabalhos/IA/SearchAlgs/Movimentos.c
 
 CMakeFiles/IA.dir/SearchAlgs/Movimentos.c.i: cmake_force
@@ -310,7 +296,7 @@ CMakeFiles/IA.dir/SearchAlgs/Movimentos.c.s: cmake_force
 CMakeFiles/IA.dir/main.c.o: CMakeFiles/IA.dir/flags.make
 CMakeFiles/IA.dir/main.c.o: ../main.c
 CMakeFiles/IA.dir/main.c.o: CMakeFiles/IA.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matheus/UP/IA/trabalhos/IA/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/IA.dir/main.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matheus/UP/IA/trabalhos/IA/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/IA.dir/main.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/IA.dir/main.c.o -MF CMakeFiles/IA.dir/main.c.o.d -o CMakeFiles/IA.dir/main.c.o -c /home/matheus/UP/IA/trabalhos/IA/main.c
 
 CMakeFiles/IA.dir/main.c.i: cmake_force
@@ -324,7 +310,7 @@ CMakeFiles/IA.dir/main.c.s: cmake_force
 CMakeFiles/IA.dir/Utils/BoardUtils.c.o: CMakeFiles/IA.dir/flags.make
 CMakeFiles/IA.dir/Utils/BoardUtils.c.o: ../Utils/BoardUtils.c
 CMakeFiles/IA.dir/Utils/BoardUtils.c.o: CMakeFiles/IA.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matheus/UP/IA/trabalhos/IA/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/IA.dir/Utils/BoardUtils.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matheus/UP/IA/trabalhos/IA/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/IA.dir/Utils/BoardUtils.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/IA.dir/Utils/BoardUtils.c.o -MF CMakeFiles/IA.dir/Utils/BoardUtils.c.o.d -o CMakeFiles/IA.dir/Utils/BoardUtils.c.o -c /home/matheus/UP/IA/trabalhos/IA/Utils/BoardUtils.c
 
 CMakeFiles/IA.dir/Utils/BoardUtils.c.i: cmake_force
@@ -338,7 +324,7 @@ CMakeFiles/IA.dir/Utils/BoardUtils.c.s: cmake_force
 CMakeFiles/IA.dir/Utils/Timer.c.o: CMakeFiles/IA.dir/flags.make
 CMakeFiles/IA.dir/Utils/Timer.c.o: ../Utils/Timer.c
 CMakeFiles/IA.dir/Utils/Timer.c.o: CMakeFiles/IA.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matheus/UP/IA/trabalhos/IA/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/IA.dir/Utils/Timer.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matheus/UP/IA/trabalhos/IA/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/IA.dir/Utils/Timer.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/IA.dir/Utils/Timer.c.o -MF CMakeFiles/IA.dir/Utils/Timer.c.o.d -o CMakeFiles/IA.dir/Utils/Timer.c.o -c /home/matheus/UP/IA/trabalhos/IA/Utils/Timer.c
 
 CMakeFiles/IA.dir/Utils/Timer.c.i: cmake_force
@@ -348,6 +334,48 @@ CMakeFiles/IA.dir/Utils/Timer.c.i: cmake_force
 CMakeFiles/IA.dir/Utils/Timer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/IA.dir/Utils/Timer.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/matheus/UP/IA/trabalhos/IA/Utils/Timer.c -o CMakeFiles/IA.dir/Utils/Timer.c.s
+
+CMakeFiles/IA.dir/SearchAlgs/DFS.c.o: CMakeFiles/IA.dir/flags.make
+CMakeFiles/IA.dir/SearchAlgs/DFS.c.o: ../SearchAlgs/DFS.c
+CMakeFiles/IA.dir/SearchAlgs/DFS.c.o: CMakeFiles/IA.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matheus/UP/IA/trabalhos/IA/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/IA.dir/SearchAlgs/DFS.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/IA.dir/SearchAlgs/DFS.c.o -MF CMakeFiles/IA.dir/SearchAlgs/DFS.c.o.d -o CMakeFiles/IA.dir/SearchAlgs/DFS.c.o -c /home/matheus/UP/IA/trabalhos/IA/SearchAlgs/DFS.c
+
+CMakeFiles/IA.dir/SearchAlgs/DFS.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/IA.dir/SearchAlgs/DFS.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/matheus/UP/IA/trabalhos/IA/SearchAlgs/DFS.c > CMakeFiles/IA.dir/SearchAlgs/DFS.c.i
+
+CMakeFiles/IA.dir/SearchAlgs/DFS.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/IA.dir/SearchAlgs/DFS.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/matheus/UP/IA/trabalhos/IA/SearchAlgs/DFS.c -o CMakeFiles/IA.dir/SearchAlgs/DFS.c.s
+
+CMakeFiles/IA.dir/DataStructures/DFSBoard.c.o: CMakeFiles/IA.dir/flags.make
+CMakeFiles/IA.dir/DataStructures/DFSBoard.c.o: ../DataStructures/DFSBoard.c
+CMakeFiles/IA.dir/DataStructures/DFSBoard.c.o: CMakeFiles/IA.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matheus/UP/IA/trabalhos/IA/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/IA.dir/DataStructures/DFSBoard.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/IA.dir/DataStructures/DFSBoard.c.o -MF CMakeFiles/IA.dir/DataStructures/DFSBoard.c.o.d -o CMakeFiles/IA.dir/DataStructures/DFSBoard.c.o -c /home/matheus/UP/IA/trabalhos/IA/DataStructures/DFSBoard.c
+
+CMakeFiles/IA.dir/DataStructures/DFSBoard.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/IA.dir/DataStructures/DFSBoard.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/matheus/UP/IA/trabalhos/IA/DataStructures/DFSBoard.c > CMakeFiles/IA.dir/DataStructures/DFSBoard.c.i
+
+CMakeFiles/IA.dir/DataStructures/DFSBoard.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/IA.dir/DataStructures/DFSBoard.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/matheus/UP/IA/trabalhos/IA/DataStructures/DFSBoard.c -o CMakeFiles/IA.dir/DataStructures/DFSBoard.c.s
+
+CMakeFiles/IA.dir/DataStructures/DFSBoardStack.c.o: CMakeFiles/IA.dir/flags.make
+CMakeFiles/IA.dir/DataStructures/DFSBoardStack.c.o: ../DataStructures/DFSBoardStack.c
+CMakeFiles/IA.dir/DataStructures/DFSBoardStack.c.o: CMakeFiles/IA.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matheus/UP/IA/trabalhos/IA/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/IA.dir/DataStructures/DFSBoardStack.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/IA.dir/DataStructures/DFSBoardStack.c.o -MF CMakeFiles/IA.dir/DataStructures/DFSBoardStack.c.o.d -o CMakeFiles/IA.dir/DataStructures/DFSBoardStack.c.o -c /home/matheus/UP/IA/trabalhos/IA/DataStructures/DFSBoardStack.c
+
+CMakeFiles/IA.dir/DataStructures/DFSBoardStack.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/IA.dir/DataStructures/DFSBoardStack.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/matheus/UP/IA/trabalhos/IA/DataStructures/DFSBoardStack.c > CMakeFiles/IA.dir/DataStructures/DFSBoardStack.c.i
+
+CMakeFiles/IA.dir/DataStructures/DFSBoardStack.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/IA.dir/DataStructures/DFSBoardStack.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/matheus/UP/IA/trabalhos/IA/DataStructures/DFSBoardStack.c -o CMakeFiles/IA.dir/DataStructures/DFSBoardStack.c.s
 
 # Object files for target IA
 IA_OBJECTS = \
@@ -361,7 +389,6 @@ IA_OBJECTS = \
 "CMakeFiles/IA.dir/DataStructures/Stack.c.o" \
 "CMakeFiles/IA.dir/DataStructures/Heap.c.o" \
 "CMakeFiles/IA.dir/SearchAlgs/A*.c.o" \
-"CMakeFiles/IA.dir/SearchAlgs/BL.c.o" \
 "CMakeFiles/IA.dir/SearchAlgs/BP.c.o" \
 "CMakeFiles/IA.dir/SearchAlgs/Guloso.c.o" \
 "CMakeFiles/IA.dir/SearchAlgs/BFS.c.o" \
@@ -370,7 +397,10 @@ IA_OBJECTS = \
 "CMakeFiles/IA.dir/SearchAlgs/Movimentos.c.o" \
 "CMakeFiles/IA.dir/main.c.o" \
 "CMakeFiles/IA.dir/Utils/BoardUtils.c.o" \
-"CMakeFiles/IA.dir/Utils/Timer.c.o"
+"CMakeFiles/IA.dir/Utils/Timer.c.o" \
+"CMakeFiles/IA.dir/SearchAlgs/DFS.c.o" \
+"CMakeFiles/IA.dir/DataStructures/DFSBoard.c.o" \
+"CMakeFiles/IA.dir/DataStructures/DFSBoardStack.c.o"
 
 # External object files for target IA
 IA_EXTERNAL_OBJECTS =
@@ -385,7 +415,6 @@ IA: CMakeFiles/IA.dir/DataStructures/Queue.c.o
 IA: CMakeFiles/IA.dir/DataStructures/Stack.c.o
 IA: CMakeFiles/IA.dir/DataStructures/Heap.c.o
 IA: CMakeFiles/IA.dir/SearchAlgs/A*.c.o
-IA: CMakeFiles/IA.dir/SearchAlgs/BL.c.o
 IA: CMakeFiles/IA.dir/SearchAlgs/BP.c.o
 IA: CMakeFiles/IA.dir/SearchAlgs/Guloso.c.o
 IA: CMakeFiles/IA.dir/SearchAlgs/BFS.c.o
@@ -395,9 +424,12 @@ IA: CMakeFiles/IA.dir/SearchAlgs/Movimentos.c.o
 IA: CMakeFiles/IA.dir/main.c.o
 IA: CMakeFiles/IA.dir/Utils/BoardUtils.c.o
 IA: CMakeFiles/IA.dir/Utils/Timer.c.o
+IA: CMakeFiles/IA.dir/SearchAlgs/DFS.c.o
+IA: CMakeFiles/IA.dir/DataStructures/DFSBoard.c.o
+IA: CMakeFiles/IA.dir/DataStructures/DFSBoardStack.c.o
 IA: CMakeFiles/IA.dir/build.make
 IA: CMakeFiles/IA.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/matheus/UP/IA/trabalhos/IA/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Linking C executable IA"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/matheus/UP/IA/trabalhos/IA/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Linking C executable IA"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/IA.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

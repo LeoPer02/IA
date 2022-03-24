@@ -98,6 +98,18 @@
 		<Unit filename="/home/matheus/UP/IA/trabalhos/IA/DataStructures/BoardStack.h">
 			<Option target="IA"/>
 		</Unit>
+		<Unit filename="/home/matheus/UP/IA/trabalhos/IA/DataStructures/DFSBoard.c">
+			<Option target="IA"/>
+		</Unit>
+		<Unit filename="/home/matheus/UP/IA/trabalhos/IA/DataStructures/DFSBoard.h">
+			<Option target="IA"/>
+		</Unit>
+		<Unit filename="/home/matheus/UP/IA/trabalhos/IA/DataStructures/DFSBoardStack.c">
+			<Option target="IA"/>
+		</Unit>
+		<Unit filename="/home/matheus/UP/IA/trabalhos/IA/DataStructures/DFSBoardStack.h">
+			<Option target="IA"/>
+		</Unit>
 		<Unit filename="/home/matheus/UP/IA/trabalhos/IA/DataStructures/HashStack.c">
 			<Option target="IA"/>
 		</Unit>
@@ -146,16 +158,16 @@
 		<Unit filename="/home/matheus/UP/IA/trabalhos/IA/SearchAlgs/BFS.h">
 			<Option target="IA"/>
 		</Unit>
-		<Unit filename="/home/matheus/UP/IA/trabalhos/IA/SearchAlgs/BL.c">
-			<Option target="IA"/>
-		</Unit>
-		<Unit filename="/home/matheus/UP/IA/trabalhos/IA/SearchAlgs/BL.h">
-			<Option target="IA"/>
-		</Unit>
 		<Unit filename="/home/matheus/UP/IA/trabalhos/IA/SearchAlgs/BP.c">
 			<Option target="IA"/>
 		</Unit>
 		<Unit filename="/home/matheus/UP/IA/trabalhos/IA/SearchAlgs/BP.h">
+			<Option target="IA"/>
+		</Unit>
+		<Unit filename="/home/matheus/UP/IA/trabalhos/IA/SearchAlgs/DFS.c">
+			<Option target="IA"/>
+		</Unit>
+		<Unit filename="/home/matheus/UP/IA/trabalhos/IA/SearchAlgs/DFS.h">
 			<Option target="IA"/>
 		</Unit>
 		<Unit filename="/home/matheus/UP/IA/trabalhos/IA/SearchAlgs/Guloso.c">

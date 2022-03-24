@@ -31,6 +31,7 @@ void ids(short int start[][4], short int goal[][4]) {
 
     printf("Solution found!\n");
     printMovementStack(foundBoard->movementStack);
+    printf("Max number of nodes: %i\n", depth-1);
 }
 
 
@@ -57,6 +58,7 @@ IDSBoard* dls(IDSBoard* start, short int goal[][4]) {
                     if (isMovimentoPossivel(stack->board->zeroLocation[0], stack->board->zeroLocation[1], movementOptions[i], stack->board->movementStack->move)) {
                         doMovementIDS(stack->board, movementOptions[i], newGrid);
                         newBoard = generateBoardIDS(stack->board, movementOptions[i], newGrid);
+
                         pushBoardToStack(newBoard, &stack);
 
                         found = true;

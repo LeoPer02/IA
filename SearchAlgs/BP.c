@@ -14,26 +14,10 @@ void BP(short int inicial[][4], short int final[][4]){
     while(!isEmpty(&open)){
        temp = pop(&open);
         if(comparar(temp->data, final)){
-            printf("mov:%c  depth:%d\n", temp->mov, temp->depth);
-        for(int i = 0; i < 4; i++){
-            for(int j = 0; j < 4; j++){
-                printf("%d ", temp->data[i][j]);
-            }
-            printf("\n");
-        }
-        printf("------------------\n");
             pushQ(&used,temp->data,-1,temp->mov,temp->x,temp->y,temp->parent, temp->depth);
             returnPathQ(&used);
             return;
         }
-        printf("mov:%c  depth:%d\n", temp->mov, temp->depth);
-        for(int i = 0; i < 4; i++){
-            for(int j = 0; j < 4; j++){
-                printf("%d ", temp->data[i][j]);
-            }
-            printf("\n");
-        }
-        printf("------------------\n");
         if(isMovimentoPossivel(temp->x, temp->y, 'd', temp->mov)){
             short int copy[4][4];
             copyArray(copy, temp->data);

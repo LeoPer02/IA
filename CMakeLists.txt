@@ -27,8 +27,6 @@ add_executable(IA
         DataStructures/Heap.h
         SearchAlgs/A*.c
         SearchAlgs/A*.h
-        SearchAlgs/BL.c
-        SearchAlgs/BL.h
         SearchAlgs/BP.c
         SearchAlgs/BP.h
         SearchAlgs/Guloso.c
@@ -47,7 +45,6 @@ add_executable(IA
         DataStructures/Queue.h
         DataStructures/Heap.h
         SearchAlgs/A*.h
-        SearchAlgs/BL.h
         DataStructures/Stack.h
         SearchAlgs/BP.h
-        SearchAlgs/Guloso.h Utils/Timer.c Utils/Timer.h)
+        SearchAlgs/Guloso.h Utils/Timer.c Utils/Timer.h SearchAlgs/DFS.c DataStructures/DFSBoard.c DataStructures/DFSBoard.h DataStructures/DFSBoardStack.c DataStructures/DFSBoardStack.h SearchAlgs/DFS.h)

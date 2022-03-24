@@ -5,7 +5,7 @@
 #include "./SearchAlgs/Guloso.h"
 #include "./SearchAlgs/IDS.h"
 #include "./SearchAlgs/BFS.h"
-#include "./SearchAlgs/BP.h"
+#include "./SearchAlgs/DFS.h"
 #include "./Utils/BoardUtils.h"
 #include "./Utils/Timer.h"
 
@@ -92,7 +92,7 @@ int main(){
             bfs(inicial, final);
             break;
         case 5:
-            BP(inicial, final);
+            dfs(inicial, final);
             break;
         default:
             printf("Ops, something went wrong.\nQuitting...\n");

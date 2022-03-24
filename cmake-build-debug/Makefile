@@ -201,6 +201,54 @@ DataStructures/BoardStack.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/IA.dir/build.make CMakeFiles/IA.dir/DataStructures/BoardStack.c.s
 .PHONY : DataStructures/BoardStack.c.s
 
+DataStructures/DFSBoard.o: DataStructures/DFSBoard.c.o
+.PHONY : DataStructures/DFSBoard.o
+
+# target to build an object file
+DataStructures/DFSBoard.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/IA.dir/build.make CMakeFiles/IA.dir/DataStructures/DFSBoard.c.o
+.PHONY : DataStructures/DFSBoard.c.o
+
+DataStructures/DFSBoard.i: DataStructures/DFSBoard.c.i
+.PHONY : DataStructures/DFSBoard.i
+
+# target to preprocess a source file
+DataStructures/DFSBoard.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/IA.dir/build.make CMakeFiles/IA.dir/DataStructures/DFSBoard.c.i
+.PHONY : DataStructures/DFSBoard.c.i
+
+DataStructures/DFSBoard.s: DataStructures/DFSBoard.c.s
+.PHONY : DataStructures/DFSBoard.s
+
+# target to generate assembly for a file
+DataStructures/DFSBoard.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/IA.dir/build.make CMakeFiles/IA.dir/DataStructures/DFSBoard.c.s
+.PHONY : DataStructures/DFSBoard.c.s
+
+DataStructures/DFSBoardStack.o: DataStructures/DFSBoardStack.c.o
+.PHONY : DataStructures/DFSBoardStack.o
+
+# target to build an object file
+DataStructures/DFSBoardStack.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/IA.dir/build.make CMakeFiles/IA.dir/DataStructures/DFSBoardStack.c.o
+.PHONY : DataStructures/DFSBoardStack.c.o
+
+DataStructures/DFSBoardStack.i: DataStructures/DFSBoardStack.c.i
+.PHONY : DataStructures/DFSBoardStack.i
+
+# target to preprocess a source file
+DataStructures/DFSBoardStack.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/IA.dir/build.make CMakeFiles/IA.dir/DataStructures/DFSBoardStack.c.i
+.PHONY : DataStructures/DFSBoardStack.c.i
+
+DataStructures/DFSBoardStack.s: DataStructures/DFSBoardStack.c.s
+.PHONY : DataStructures/DFSBoardStack.s
+
+# target to generate assembly for a file
+DataStructures/DFSBoardStack.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/IA.dir/build.make CMakeFiles/IA.dir/DataStructures/DFSBoardStack.c.s
+.PHONY : DataStructures/DFSBoardStack.c.s
+
 DataStructures/HashStack.o: DataStructures/HashStack.c.o
 .PHONY : DataStructures/HashStack.o
 
@@ -393,30 +441,6 @@ SearchAlgs/BFS.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/IA.dir/build.make CMakeFiles/IA.dir/SearchAlgs/BFS.c.s
 .PHONY : SearchAlgs/BFS.c.s
 
-SearchAlgs/BL.o: SearchAlgs/BL.c.o
-.PHONY : SearchAlgs/BL.o
-
-# target to build an object file
-SearchAlgs/BL.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/IA.dir/build.make CMakeFiles/IA.dir/SearchAlgs/BL.c.o
-.PHONY : SearchAlgs/BL.c.o
-
-SearchAlgs/BL.i: SearchAlgs/BL.c.i
-.PHONY : SearchAlgs/BL.i
-
-# target to preprocess a source file
-SearchAlgs/BL.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/IA.dir/build.make CMakeFiles/IA.dir/SearchAlgs/BL.c.i
-.PHONY : SearchAlgs/BL.c.i
-
-SearchAlgs/BL.s: SearchAlgs/BL.c.s
-.PHONY : SearchAlgs/BL.s
-
-# target to generate assembly for a file
-SearchAlgs/BL.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/IA.dir/build.make CMakeFiles/IA.dir/SearchAlgs/BL.c.s
-.PHONY : SearchAlgs/BL.c.s
-
 SearchAlgs/BP.o: SearchAlgs/BP.c.o
 .PHONY : SearchAlgs/BP.o
 
@@ -440,6 +464,30 @@ SearchAlgs/BP.s: SearchAlgs/BP.c.s
 SearchAlgs/BP.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/IA.dir/build.make CMakeFiles/IA.dir/SearchAlgs/BP.c.s
 .PHONY : SearchAlgs/BP.c.s
+
+SearchAlgs/DFS.o: SearchAlgs/DFS.c.o
+.PHONY : SearchAlgs/DFS.o
+
+# target to build an object file
+SearchAlgs/DFS.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/IA.dir/build.make CMakeFiles/IA.dir/SearchAlgs/DFS.c.o
+.PHONY : SearchAlgs/DFS.c.o
+
+SearchAlgs/DFS.i: SearchAlgs/DFS.c.i
+.PHONY : SearchAlgs/DFS.i
+
+# target to preprocess a source file
+SearchAlgs/DFS.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/IA.dir/build.make CMakeFiles/IA.dir/SearchAlgs/DFS.c.i
+.PHONY : SearchAlgs/DFS.c.i
+
+SearchAlgs/DFS.s: SearchAlgs/DFS.c.s
+.PHONY : SearchAlgs/DFS.s
+
+# target to generate assembly for a file
+SearchAlgs/DFS.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/IA.dir/build.make CMakeFiles/IA.dir/SearchAlgs/DFS.c.s
+.PHONY : SearchAlgs/DFS.c.s
 
 SearchAlgs/Guloso.o: SearchAlgs/Guloso.c.o
 .PHONY : SearchAlgs/Guloso.o
@@ -627,6 +675,12 @@ help:
 	@echo "... DataStructures/BoardStack.o"
 	@echo "... DataStructures/BoardStack.i"
 	@echo "... DataStructures/BoardStack.s"
+	@echo "... DataStructures/DFSBoard.o"
+	@echo "... DataStructures/DFSBoard.i"
+	@echo "... DataStructures/DFSBoard.s"
+	@echo "... DataStructures/DFSBoardStack.o"
+	@echo "... DataStructures/DFSBoardStack.i"
+	@echo "... DataStructures/DFSBoardStack.s"
 	@echo "... DataStructures/HashStack.o"
 	@echo "... DataStructures/HashStack.i"
 	@echo "... DataStructures/HashStack.s"
@@ -651,12 +705,12 @@ help:
 	@echo "... SearchAlgs/BFS.o"
 	@echo "... SearchAlgs/BFS.i"
 	@echo "... SearchAlgs/BFS.s"
-	@echo "... SearchAlgs/BL.o"
-	@echo "... SearchAlgs/BL.i"
-	@echo "... SearchAlgs/BL.s"
 	@echo "... SearchAlgs/BP.o"
 	@echo "... SearchAlgs/BP.i"
 	@echo "... SearchAlgs/BP.s"
+	@echo "... SearchAlgs/DFS.o"
+	@echo "... SearchAlgs/DFS.i"
+	@echo "... SearchAlgs/DFS.s"
 	@echo "... SearchAlgs/Guloso.o"
 	@echo "... SearchAlgs/Guloso.i"
 	@echo "... SearchAlgs/Guloso.s"

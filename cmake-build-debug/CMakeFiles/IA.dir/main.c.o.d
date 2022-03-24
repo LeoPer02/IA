@@ -43,7 +43,32 @@ CMakeFiles/IA.dir/main.c.o: /home/matheus/UP/IA/trabalhos/IA/main.c \
  /home/matheus/UP/IA/trabalhos/IA/./SearchAlgs/../DataStructures/BFSBoard.h \
  /usr/include/string.h /usr/include/strings.h /usr/include/malloc.h \
  /home/matheus/UP/IA/trabalhos/IA/./SearchAlgs/../DataStructures/../SearchAlgs/Movimentos.h \
- /home/matheus/UP/IA/trabalhos/IA/./SearchAlgs/BP.h \
+ /home/matheus/UP/IA/trabalhos/IA/./SearchAlgs/DFS.h \
+ /home/matheus/UP/IA/trabalhos/IA/./SearchAlgs/../DataStructures/DFSBoardStack.h \
+ /usr/include/stdlib.h /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+ /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
+ /usr/include/x86_64-linux-gnu/bits/floatn.h \
+ /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+ /usr/include/x86_64-linux-gnu/sys/types.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-intn.h /usr/include/endian.h \
+ /usr/include/x86_64-linux-gnu/bits/byteswap.h \
+ /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
+ /usr/include/x86_64-linux-gnu/sys/select.h \
+ /usr/include/x86_64-linux-gnu/bits/select.h \
+ /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
+ /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+ /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
+ /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
+ /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
+ /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h /usr/include/alloca.h \
+ /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+ /home/matheus/UP/IA/trabalhos/IA/./SearchAlgs/../DataStructures/DFSBoard.h \
+ /home/matheus/UP/IA/trabalhos/IA/./SearchAlgs/../DataStructures/../Utils/BoardUtils.h \
+ /home/matheus/UP/IA/trabalhos/IA/./SearchAlgs/../DataStructures/../Utils/../DataStructures/MovementStack.h \
+ /home/matheus/UP/IA/trabalhos/IA/./SearchAlgs/../DataStructures/DFSBoard.h \
+ /home/matheus/UP/IA/trabalhos/IA/./SearchAlgs/../DataStructures/HashStack.h \
+ /home/matheus/UP/IA/trabalhos/IA/./SearchAlgs/../Utils/BoardUtils.h \
  /home/matheus/UP/IA/trabalhos/IA/./Utils/BoardUtils.h \
- /home/matheus/UP/IA/trabalhos/IA/./Utils/../DataStructures/MovementStack.h \
  /home/matheus/UP/IA/trabalhos/IA/./Utils/Timer.h
